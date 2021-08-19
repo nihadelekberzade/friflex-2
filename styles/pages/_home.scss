@@ -156,7 +156,6 @@
       padding-bottom: 80px;
     }
     .projects {
-      padding-bottom: 190px;
       &__list {
         grid-template-columns: 500px 180px 500px;
         grid-template-rows: repeat(3, 640px);
@@ -184,8 +183,6 @@
         }
         & > *:nth-child(6) {
           grid-column: 3/-1;
-        }
-        .large {
         }
         .small {
           flex-basis: 499px;

@@ -1,0 +1,75 @@
+.cases-page {
+  .tags-section {
+    padding-bottom: 48px;
+    &__title {
+      font-size: 42px;
+      margin: 16px 0 32px;
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      & > li {
+        flex-basis: auto;
+      }
+    }
+  }
+  .projects {
+    &__list {
+      display: grid;
+      gap: 40px;
+      margin-bottom: 40px;
+      li img {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .tags-section {
+      padding-bottom: 60px;
+      &__title {
+        font-size: 95px;
+        margin: 80px 0 100px;
+      }
+    }
+    .projects {
+      padding-bottom: 0;
+      &__list {
+        grid-template-columns: 500px 180px 500px;
+        grid-template-rows: repeat(3, 640px);
+        gap: 30px;
+        a {
+          width: 100%;
+          height: 100%;
+          img {
+          }
+        }
+        & > *:nth-child(1) {
+          grid-column: 1/3;
+        }
+        & > *:nth-child(2) {
+          grid-column: 3/-1;
+        }
+        & > *:nth-child(3) {
+          grid-column: 1/2;
+        }
+        & > *:nth-child(4) {
+          grid-column: 2/-1;
+        }
+        & > *:nth-child(5) {
+          grid-column: 1/3;
+        }
+        & > *:nth-child(6) {
+          grid-column: 3/-1;
+        }
+        & > *:nth-child(7) {
+          grid-column: 1/3;
+        }
+        .small {
+          flex-basis: 499px;
+        }
+      }
+    }
+  }
+}
+
