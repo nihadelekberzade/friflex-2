@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+}
+title, script {
+  display: none;
+}
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("/fonts/Proxima-Nova/Proxima-Nova_Regular.ttf") format("truetype"); /* IE6-IE8 */
+}
+body {
+  font-size: 14px;
+  font-family: 'Proxima-Nova', 'Arial', sans-serif;
+  color: $clr-black;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+input,
+button, textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+input, textarea {
+  color: inherit;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  background: none;
+}
+
+
+
+
+
+
+
+
+
+

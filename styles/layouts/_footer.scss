@@ -1,0 +1,56 @@
+.footer {
+  color: $clr-white;
+  padding: 56px 0;
+  background: $clr-black;
+  &__logo {
+    margin-bottom: 32px;
+    img {
+      max-width: 160px;
+    }
+  }
+  &__field {
+    @extend .body1;
+    &-title {
+      margin-bottom: 16px;
+    }
+    &--projects {
+      margin: 40px 0 32px;
+    }
+    ul {
+      @extend .body2;
+      li:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    & > *:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    padding: 60px 0 55px;
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+      img {
+        margin-bottom: auto;
+      }
+    }
+    &__inner {
+      display: flex;
+      & > * {
+        flex: 1;
+      }
+    }
+    &__field {
+      &--projects {
+        margin: 0;
+      }
+    }
+  }
+}

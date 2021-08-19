@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script defer src="scripts/header.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__left">
+        <a class="header__logo" href="#">
+          <img src="./img/logo.svg" alt="logo"/>
+        </a>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#"> Кейсы</a>
+            </li>
+            <li>
+              <a href="#"> Услуги</a>
+            </li>
+            <li>
+              <a href="#"> Flutter</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <div class="dropdown__head">
+                  О нас
+                  <img src="/img/icon/arrowDownShort.svg" alt="arrow down">
+                </div>
+
+                <div class="dropdown__content">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        О компании
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Карьера
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        FinChess
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Блог
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"> Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="header__menu-btn">
+        <img src="./img/icon/Menu.svg" alt="menu"/>
+      </button>
+      <div class="header__right">
+        <p class="body2">
+          En
+        </p>
+        <button class="btn-header">
+          Обсудить проект
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z" fill="#6645EA"/>
+            <path fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+                  fill="#6645EA"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="header__menu-mobile header__menu-mobile--hidden mobile">
+      <ul class="sub1--bold">
+        <li>
+          <a href="#"> Кейсы</a>
+        </li>
+        <li>
+          <a href="#"> Услуги</a>
+        </li>
+        <li>
+          <a href="#"> Flutter</a>
+        </li>
+        <li>
+          <a href="#"> О компании</a>
+        </li>
+        <li>
+          <a href="#"> Карьера</a>
+        </li>
+        <li>
+          <a href="#"> Блог</a>
+        </li>
+        <li>
+          <a href="#"> Контакты</a>
+        </li>
+        <li>
+          <a href="#">
+            Ru / En
+          </a>
+        </li>
+        <li>
+          О нас
+        </li>
+      </ul>
+      <button class="btn-header">
+        Обсудить проект
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z" fill="#6645EA"/>
+          <path fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+                fill="#6645EA"/>
+        </svg>
+      </button>
+      <div class="header__menu-mobile-footer sub1--bold">
+        <a href="tel:+7 (495) 131-54-96">+7 (495) 131-54-96</a>
+        <a href="mailto: hello@friflex.com"> hello@friflex.com </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="home">
+  <section class="hero">
+    <div class="container">
+      <div class="hero__top">
+        <div>
+          <div class="hero__title mb-24">
+            <h1 class="h1">
+              Friendly
+            </h1>
+            <div class="flex items-center">
+              <h1 class="hero__icon">
+                &
+              </h1>
+              <h1 class="h1">
+                Flexible
+              </h1>
+            </div>
+            <h1>
+              development
+            </h1>
+          </div>
+          <p class="sub1 hero__subtitle">
+            Решаем задачи бизнеса с помощью технологий
+          </p>
+        </div>
+        <div class="hero__img">
+
+          <picture>
+            <source media="(min-width:1024px)" srcset="/img/hero/hero1.svg">
+            <img src="./img/hero/heroImg.svg" alt="panda"/>
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <div class="swiper-container partners-swiper mb-24">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/homepagePartnerLogos/Дикси.svg" alt="diksi">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/homepagePartnerLogos/logo_bristol.svg" alt="bristol">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/homepagePartnerLogos/magnit.svg" alt="magnit">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/homepagePartnerLogos/kaspersky.svg" alt="kaspersky">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects">
+    <div class="container">
+      <ul class="projects__list">
+        <li class="large">
+          <a href="#">
+
+            <picture>
+              <source media="(min-width:1024px)" srcset="./img/projects/diskiDesktop.svg">
+              <img src="./img/projects/diksi.svg" alt="diksi"/>
+            </picture>
+          </a>
+        </li>
+        <li class="small">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1024px)" srcset="./img/projects/bristolDesktop.svg">
+              <img src="./img/projects/bristol.svg" alt="bristol"/>
+            </picture>
+          </a>
+        </li>
+
+
+        <li class="small">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1024px)" srcset="./img/projects/energogarantDesktop.svg">
+              <img src="./img/projects/energogarant.svg" alt="energogarant"/>
+            </picture>
+          </a>
+        </li>
+        <li class="large">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1024px)" srcset="./img/projects/idChessDesktop.svg">
+              <img src="./img/projects/idChess.svg" alt="id chess"/>
+            </picture>
+          </a>
+        </li>
+        <li class="large">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1024px)" srcset="./img/projects/myDeviceDesktop.svg">
+              <img src="./img/projects/myDevice.svg" alt="myDevice"/>
+            </picture>
+          </a>
+        </li>
+        <li class="large">
+          <a href="#">
+            <picture>
+              <source media="(min-width:1024px)" srcset="./img/projects/tripsterDesktop.svg">
+              <img src="./img/projects/energogarant.svg" alt="energogarant"/>
+            </picture>
+          </a>
+        </li>
+      </ul>
+      <button class="btn-header">
+        Все проекты
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z" fill="#6645EA"/>
+          <path fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+                fill="#6645EA"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <h3 class="h3 services__title">
+        Услуги
+      </h3>
+      <ul class="service-list">
+        <li>
+          <a href="#" class="service-card">
+            <h2 class="service-card__title">
+              Разработка мобильных приложений
+            </h2>
+            <h3 class="service-card__subtitle">
+              Кроссплатформенных и нативных
+            </h3>
+            <p class="service-card__price">
+              От 2000 руб в час
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="service-card">
+            <h2 class="service-card__title">
+              Web-разработка
+            </h2>
+            <h3 class="service-card__subtitle">
+              Создание сайтов, фронтенд и бэкенд
+            </h3>
+            <p class="service-card__price">
+              От 2000 руб в час
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="service-card">
+            <h2 class="service-card__title">
+              Аналитика
+            </h2>
+            <h3 class="service-card__subtitle">
+              Анализ данных
+            </h3>
+            <p class="service-card__price">
+              От 1000 руб в час
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="service-card">
+            <h2 class="service-card__title">
+              Аудит
+            </h2>
+            <h3 class="service-card__subtitle">
+              Скрупулезная проверка ИТ-продуктов
+            </h3>
+            <p class="service-card__price">
+              От 2500 руб в час
+            </p>
+          </a>
+        </li>
+      </ul>
+      <button class="btn-header mobile">
+        Все услуги
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z" fill="#6645EA"/>
+          <path fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+                fill="#6645EA"/>
+        </svg>
+      </button>
+      <div class="services__footer desktop">
+        <button class="btn-tertiary">
+          Все услуги
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.66666 14.2761H26.6667V16.9428H2.66666V14.2761Z" fill="#6645EA"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.9706 15.7042L16.4853 7.21893L18.3709 5.33331L28.7418 15.7042L18.3709 26.0751L16.4853 24.1895L24.9706 15.7042Z"
+                  fill="#6645EA"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="clients">
+    <div class="container">
+      <h3 class="h3 clients__title">
+        Клиенты о нас
+      </h3>
+      <div class="clients__review-list">
+        <ul>
+          <li>
+            <div class="review-item review-item--diksi">
+              <img src="./img/clients/diksiLogo.svg" alt="diksi"/>
+              <p>
+                «Учитывая растущий спрос на цифровые решения, мы хотели создать не просто приложение, а своеобразный
+                «магазин в кармане», который будет помогать клиентам совершать покупки. И у нас в тесном партнерстве с
+                Friflex это получилось»
+              </p>
+              <div class="review-item__author">
+                <img src="./img/clients/author.png" alt="author"/>
+                <div>
+                  <h2 class="review-item__author-name">
+                    Вадим Макаренко
+                  </h2>
+                  <h3 class="review-item__author-title">
+                    Директор по маркетингу ГК «Дикси»
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="review-item review-item--mokka">
+              <img src="./img/clients/mokkaLogo.svg" alt="mokka"/>
+              <p>
+                «Учитывая растущий спрос на цифровые решения, мы хотели создать не просто приложение, а своеобразный
+                «магазин в кармане», который будет помогать клиентам совершать покупки. И у нас в тесном партнерстве с
+                Friflex это получилось».
+              </p>
+              <div class="review-item__author">
+                <img src="./img/clients/author.png" alt="author"/>
+                <div>
+                  <h2 class="review-item__author-name">
+                    Вадим Макаренко
+                  </h2>
+                  <h3 class="review-item__author-title">
+                    Директор по маркетингу ГК «Дикси»
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div class="review-item review-item--bristol">
+              <img src="./img/clients/bristolLogo.svg" alt="bristol"/>
+              <p>
+                «Friflex в короткие сроки разработал для нас несколько web-сервисов. Начав сотрудничать с Friflex, мы
+                оперативно и качественно решили очень важную задачу – «оцифровали» процесс выдачи электронных полисов
+                для разных категорий клиентов. Friflex зарекомендовал себя как надежный ИТ-партнер. Мы продолжаем
+                сотрудничать с компанией по другим проектам, в том числе и по мобильной разработке».
+              </p>
+              <div class="review-item__author">
+                <img src="./img/clients/author.png" alt="author"/>
+                <div>
+                  <h2 class="review-item__author-name">
+                    Вадим Макаренко
+                  </h2>
+                  <h3 class="review-item__author-title">
+                    Директор по маркетингу ГК «Дикси»
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="review-item review-item--energogarant">
+              <img src="./img/clients/energogarantLogo.svg" alt="energogarant"/>
+              <p>
+                «Учитывая растущий спрос на цифровые решения, мы хотели создать не просто приложение, а своеобразный.
+              </p>
+              <div class="review-item__author">
+                <img src="./img/clients/author.png" alt="author"/>
+                <div>
+                  <h2 class="review-item__author-name">
+                    Вадим Макаренко
+                  </h2>
+                  <h3 class="review-item__author-title">
+                    Директор по маркетингу ГК «Дикси»
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="news-section">
+    <div class="container">
+      <div class="news-section__header">
+        <h3 class="news-section__title h3">Friflex – эксперты в СМИ</h3>
+        <div class="flex desktop">
+          <button class="swiper-button-prev">
+            <img src="./img/icon/arrowLeft.svg" alt="arrow left">
+          </button>
+          <div class="swiper-index swiper-index--active">
+            01 &nbsp;
+          </div>
+          <div class="swiper-index swiper-index--max">
+            /&nbsp; 02
+          </div>
+          <button class="swiper-button-next">
+            <img src="./img/icon/arrowRight.svg" alt="arrow right">
+          </button>
+        </div>
+      </div>
+      <div class="swiper-container news-swiper  mb-24">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="news-cart">
+              <div class="news-cart__img">
+                <img src="./img/news/news1.jpg" alt="news">
+              </div>
+              <div class="news-cart__content">
+                <div class="news-cart__content-head">
+                  <img src="./img/news/Logos%20for%20news%20mobile.svg" alt="news logo" class="news-cart__logo">
+                  <div class="news-cart__date">
+                    08 июня 2021
+                  </div>
+                </div>
+                <p class="news-cart__txt">
+                  Кросс-платформенная разработка мобильных приложений: в чем плюсы...
+                </p>
+                <div class="news-cart__tag">
+                  #Разработка
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="news-cart">
+              <div class="news-cart__img">
+                <img src="./img/news/news2.jpg" alt="news">
+              </div>
+              <div class="news-cart__content">
+                <div class="news-cart__content-head">
+                  <img src="./img/news/logo2.svg" alt="news logo" class="news-cart__logo">
+                  <div class="news-cart__date">
+                    24 марта 2021
+                  </div>
+                </div>
+                <p class="news-cart__txt">
+                  ТЗ на разработку. Как его написать, если вы не айтишник? </p>
+                <div class="news-cart__tag">
+                  #Разработка
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="news-cart">
+              <div class="news-cart__img">
+                <img src="./img/news/news3.jpg" alt="news">
+              </div>
+              <div class="news-cart__content">
+                <div class="news-cart__content-head">
+                  <img src="./img/news/logo3.svg" alt="news logo" class="news-cart__logo">
+                  <div class="news-cart__date">
+                    04 февраля 2021
+                  </div>
+                </div>
+                <p class="news-cart__txt">
+                  Мобильное приложение для интернет-магазина: нужно ли оно, какой функционал, сколько стоит </p>
+                <div class="news-cart__tag">
+                  #Разработка
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="news-cart">
+              <div class="news-cart__img">
+                <img src="./img/news/news1.jpg" alt="news">
+              </div>
+              <div class="news-cart__content">
+                <div class="news-cart__content-head">
+                  <img src="./img/news/Logos%20for%20news%20mobile.svg" alt="news logo" class="news-cart__logo">
+                  <div class="news-cart__date">
+                    08 июня 2021
+                  </div>
+                </div>
+                <p class="news-cart__txt">
+                  Кросс-платформенная разработка мобильных приложений: в чем плюсы...
+                </p>
+                <div class="news-cart__tag">
+                  #Разработка
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="news-cart">
+              <div class="news-cart__img">
+                <img src="./img/news/news1.jpg" alt="news">
+              </div>
+              <div class="news-cart__content">
+                <div class="news-cart__content-head">
+                  <img src="./img/news/Logos%20for%20news%20mobile.svg" alt="news logo" class="news-cart__logo">
+                  <div class="news-cart__date">
+                    08 июня 2021
+                  </div>
+                </div>
+                <p class="news-cart__txt">
+                  Кросс-платформенная разработка мобильных приложений: в чем плюсы...
+                </p>
+                <div class="news-cart__tag">
+                  #Разработка
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end desktop">
+        <button class="btn-tertiary">
+          Все услуги
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.66666 14.2761H26.6667V16.9428H2.66666V14.2761Z" fill="#6645EA"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.9706 15.7042L16.4853 7.21893L18.3709 5.33331L28.7418 15.7042L18.3709 26.0751L16.4853 24.1895L24.9706 15.7042Z"
+                  fill="#6645EA"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="contact-us">
+    <div class="container">
+      <h2 class="contact-us__title h3">
+        Напишите нам
+      </h2>
+      <div class="contact-us__inner">
+        <div class="desktop">
+          <img src="./img/pandaContact.svg" alt="panda">
+        </div>
+        <form action="#" class="form">
+          <div class="form-field">
+            <input type="text" name="name" id="name" placeholder="Имя"/>
+          </div>
+          <div class="form-field">
+            <input type="text" name="email" id="email" placeholder="E-mail"/>
+          </div>
+          <div class="form-field">
+            <textarea placeholder="Сообщение" name="message" id="message"></textarea>
+          </div>
+          <div>
+            <label class="file" for="file">
+              Прикрепить файл
+              <img src="/img/icon/skrepka.svg" alt="skrepka">
+              <input
+                type="file"
+                class="file"
+                name="file" id="file"
+                placeholder="Прикрепить файл">
+            </label>
+          </div>
+          <div class="form__lower">
+            <div class="form__lower-left">
+              <label class="form-checkbox form-field">
+                <input type="checkbox" name="nda" id="nda">
+                <span class="checkmark"></span>
+                <span>Нужен NDA</span>
+              </label>
+              <label class="form-checkbox form-field">
+                <input type="checkbox" name="agreement " id="agreement">
+                <span class="checkmark"></span>
+                <span>
+                  Я даю согласие на <a href="#" class="inline" style="text-decoration:underline;">обработку
+                  персональных данных</a>
+                </span>
+              </label>
+            </div>
+            <button class="btn-header">
+              Отправить
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z" fill="#6645EA"/>
+                <path fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+                      fill="#6645EA"/>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="./img/logoFooter.svg" alt="logo footer"/>
+        <div class="body2 desktop">
+          © Friflex LLC, 2021
+        </div>
+      </div>
+      <div class="footer__field">
+        <h2 class="body1 footer__field-title">
+          Больше о нас
+        </h2>
+        <ul class="footer__field-list">
+          <li>
+            <a href="#">
+              О компании
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Карьера в Friflex
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Блог
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Контакты
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Политика конфиденциальности
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__field footer__field--projects">
+        <h2 class="body1 footer__field-title">
+          Больше о нас
+        </h2>
+        <ul class="footer__field-list">
+          <li>
+            <a href="#">
+              FinСhess
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              IdChess
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__field">
+        <a class="body1 footer__field-title"
+           href="mailto: hello@friflex.com">
+          hello@friflex.com
+        </a>
+        <ul class="footer__field-list">
+          <li>
+            <a href="tel:+7 (495) 131-54-96">+7 (495) 131-54-96</a>
+          </li>
+          <li>
+            <div class="footer__socials">
+              <a href="#"><img src="./img/footer/facebookFooter.svg" alt="facebook"></a>
+              <a href="#"><img src="./img/footer/linkedinFooter.svg" alt="linkedin"></a>
+              <a href="#"><img src="./img/footer/behanceFooter.svg" alt="behance"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__field">
+        <div class="body2 mobile" style="margin-top: 40px;">
+          © Friflex LLC, 2021
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+	let swiper = new Swiper(".news-swiper", {
+		slidesPerView: 1,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".news-section .swiper-button-next",
+			prevEl: ".news-section .swiper-button-prev",
+		},
+		spaceBetween: 20,
+		breakpoints: {
+			// when window width is >= 480px
+			500: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerGroup: 3,
+			},
+			// when window width is >= 640px
+		},
+	});
+	swiper.on('activeIndexChange', (e) => {
+		console.log('real index: ', e.realIndex);
+		console.log('activeIndex: ', e.activeIndex);
+		console.log('progress: ', e.progress);
+		document.querySelector('.swiper-index--active').innerHTML = `0${e.progress + 1} &nbsp;`
+	});
+	swiper.on('afterInit', (e) => {
+		console.log('init:')
+	})
+	let partnersSwiper = new Swiper(".partners-swiper", {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		breakpoints: {
+			// when window width is >= 480px
+			500: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1024: {
+				slidesPerView: 4,
+				spaceBetween: 64,
+			},
+			// when window width is >= 640px
+		},
+	});
+</script>
+</body>
+</html>

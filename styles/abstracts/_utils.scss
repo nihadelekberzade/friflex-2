@@ -1,0 +1,53 @@
+.txt-center {
+  text-align: center;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+  width: 100%;
+}
+.opacity-600 {
+  opacity: .6;
+}
+.opacity-400 {
+  opacity: .4;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mobile {
+  @media only screen and (min-width: 1024px) {
+    display: none !important;
+  }
+}
+.desktop {
+  @media only screen and (max-width: 1024px) {
+    display: none !important;
+  }
+}

@@ -1,0 +1,246 @@
+.home {
+  .partners {
+    padding-bottom: 40px;
+  }
+  .projects {
+    padding-bottom: 80px;
+    &__list {
+      display: grid;
+      gap: 40px;
+      margin-bottom: 40px;
+      li img {
+        width: 100%;
+      }
+    }
+  }
+  .services {
+    background: $bg-gray--light;
+    padding: 100px 0;
+    &__title {
+      margin-bottom: 24px;
+    }
+    .service-list {
+      display: grid;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+    .service-card {
+      padding: 24px 8px 22px 16px;
+      border-radius: 4px;
+      background: $clr-white;
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+      &__title {
+        margin-bottom: 8px;
+        font-size: 25px;
+        line-height: 34px;
+      }
+      &__subtitle {
+        font-size: 20px;
+        line-height: 27px;
+      }
+      &__price {
+        margin-top: auto;
+      }
+    }
+  }
+  .clients {
+    padding: 80px 0;
+    &__title {
+      margin-bottom: 32px;
+      color: $clr-black--light;
+    }
+    &__review-list {
+      ul {
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
+        li:not(:last-child) {
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .review-item {
+      color: $clr-white;
+      padding: 24px 16px;
+      border-radius: 6px;
+      p {
+        font-size: 20px;
+        line-height: 27px;
+        margin: 16px 0 24px;
+      }
+      &__author {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 24px;
+        }
+        &-name {
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+        &-title {
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: 400;
+        }
+      }
+      &--diksi {
+        background: $clr-cyan;
+      }
+      &--bristol {
+        background: $clr-lilac--1;
+      }
+      &--mokka {
+        background: $clr-lilac;
+      }
+      &--energogarant {
+        background: $clr-lilac--2;
+      }
+    }
+  }
+  .news-section {
+    &__header {
+      margin-bottom: 32px;
+    }
+    &__title {
+      color: $clr-black--light;
+    }
+    .news-list {
+      display: grid;
+      grid-template-columns: 240px;
+    }
+    .news-cart {
+      border-radius: 6px;
+      overflow: hidden;
+      &__img {
+        img {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+        }
+      }
+      &__content {
+        background: $bg-gray--light;
+        padding: 24px 16px 16px;
+        @extend .body1;
+        &-head {
+          display: flex;
+          align-items: center;
+        }
+      }
+      &__logo {
+        border-right: 1px solid $clr-gray--dark;
+        padding-right: 12px;
+        margin-right: 12px;
+      }
+      &__date {
+        color: $clr-gray--dark;
+        @extend .body2;
+      }
+      &__txt {
+        margin: 12px 0 16px;
+        min-height: 81px;
+      }
+      &__tag {
+        color: $clr-lilac;
+        @extend .body2;
+      }
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    .partners {
+      padding-bottom: 80px;
+    }
+    .projects {
+      padding-bottom: 190px;
+      &__list {
+        grid-template-columns: 500px 180px 500px;
+        grid-template-rows: repeat(3, 640px);
+        gap: 30px;
+        a {
+          width: 100%;
+          height: 100%;
+          img {
+          }
+        }
+        & > *:nth-child(1) {
+          grid-column: 1/3;
+        }
+        & > *:nth-child(2) {
+          grid-column: 3/-1;
+        }
+        & > *:nth-child(3) {
+          grid-column: 1/2;
+        }
+        & > *:nth-child(4) {
+          grid-column: 2/-1;
+        }
+        & > *:nth-child(5) {
+          grid-column: 1/3;
+        }
+        & > *:nth-child(6) {
+          grid-column: 3/-1;
+        }
+        .large {
+        }
+        .small {
+          flex-basis: 499px;
+        }
+      }
+    }
+    .services {
+      background: $bg-gray--light;
+      &__title {
+        margin-bottom: 50px;
+      }
+      .service-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 70px;
+      }
+      .service-card {
+        &__title {
+          min-height: 68px;
+        }
+      }
+      &__footer {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .clients {
+      padding: 190px 0;
+      &__review-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      .review-item {
+        padding: 40px;
+        p {
+          margin: 30px 0 56px;
+        }
+      }
+    }
+    .news-section {
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+      .news-cart {
+        &__img {
+          img {
+            width: 395px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}

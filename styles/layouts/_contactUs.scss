@@ -1,0 +1,99 @@
+.contact-us {
+  padding: 80px 0;
+  &__title {
+    margin-bottom: 32px;
+    color: $clr-black--light;
+  }
+  .form {
+    flex: 1;
+    .form-field {
+      input, textarea {
+        color: $clr-gray--dark;
+      }
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    input, textarea {
+      padding: 16px 8px 16px 16px;
+      @extend .body1;
+      background: $bg-gray--light;
+    }
+    textarea {
+      min-height: 150px;
+      resize: none;
+    }
+    .file {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px dashed $clr-black;
+      padding: 18px 16px;
+      @extend .body1;
+      img {
+        margin-left: 13px;
+      }
+      input {
+        display: none;
+      }
+    }
+    &-checkbox {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      input {
+        display: none;
+        width: 24px;
+        height: 24px;
+      }
+      label {
+        @extend .body2;
+        color: $clr-black;
+      }
+      .checkmark {
+        width: 24px;
+        height: 24px;
+        border: 1px solid $clr-black;
+        margin-right: 15px;
+        &:after {
+          background: no-repeat url("../../img/icon/Check.svg") center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      input:checked ~ .checkmark:after {
+        content: '';
+      }
+    }
+    &__lower {
+      &-left {
+        margin: 16px 0 40px;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  @media only screen and (min-width: $desktop) {
+    padding: 180px 0 190px;
+    &__inner {
+      display: flex;
+      & > *:first-child {
+        margin-right: 30px;
+      }
+    }
+    .form {
+      input, textarea {
+        padding: 19px 20px;
+      }
+      &__lower {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        &-left {
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+}

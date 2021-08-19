@@ -1,0 +1,94 @@
+.btn-primary {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17.5px 0;
+  color: $clr-lilac;
+  background: $clr-white;
+  border: 2px solid $clr-lilac;
+  border-radius: 6px;
+  &:hover {
+    background: $clr-lilac;
+    color: $clr-white;
+  }
+}
+.btn-tag {
+  @extend .body1;
+  padding: 6px 16px;
+  border: 1px solid #d1d1d1;
+  border-radius: 24px;
+  transition: .3s;
+  &:hover {
+    border-color: $clr-black--light;
+    background: $clr-black--light;
+    color: $clr-white;
+  }
+}
+.btn-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  max-height: 50px;
+  @extend .body2;
+  color: $clr-lilac;
+  border: 2px solid $clr-lilac;
+  border-radius: 6px;
+  transition: .3s;
+  svg {
+    margin-left: 12px;
+    & > * {
+      transition: .3s;
+    }
+  }
+  &:hover {
+    color: $clr-white;
+    background: $clr-lilac;
+  }
+  &:hover > svg > * {
+    fill: $clr-white;
+  }
+}
+.btn-tertiary {
+  font-size: 31px;
+  line-height: 40px;
+  color: $clr-lilac;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    margin-left: 16px;
+    transition: .3s;
+  }
+  &:hover > svg {
+    transform: translateX(8px);
+  }
+}
+.btn-primary,
+.btn-tag,
+.btn-header,
+.btn-primary {
+  width: 100%;
+}
+@media only screen and (min-width: 500px) {
+  .btn-primary,
+  .btn-tag,
+  .btn-header,
+  .btn-primary {
+    width: auto;
+  }
+}
+@media only screen and (min-width: $desktop) {
+  .btn-tag {
+    padding: 8px 24px;
+    &:hover {
+      border-color: $clr-black;
+      background: $clr-black;
+      color: $clr-white;
+    }
+  }
+}
