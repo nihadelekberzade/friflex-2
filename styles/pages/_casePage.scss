@@ -1,0 +1,51 @@
+.case-section {
+  padding-top: 16px;
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__hero-img {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .thesis-card {
+    padding: 24px 16px;
+    background: $bg-gray--light;
+    border-radius: 6px;
+    margin-bottom: 56px;
+    &__item {
+      h2 {
+        color: $clr-lilac;
+        margin-bottom: 2px;
+      }
+      p {
+        color: $clr-black--light;
+      }
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .info-list {
+    & > *:not(:last-child) {
+      margin-bottom: 56px;
+    }
+    .info-item {
+      h2 {
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .review-card {
+    background: $bg-gray--light;
+    border-radius: 4px;
+  }
+  @media only screen and (min-width: $desktop) {
+    padding-top: 100px;
+    &__title {
+      margin-bottom: 14px;
+    }
+    &__hero-img {
+      margin-bottom: 60px;
+    }
+  }
+}

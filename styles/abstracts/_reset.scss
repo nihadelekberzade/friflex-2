@@ -27,6 +27,9 @@ a {
   display: block;
   text-decoration: none;
 }
+p {
+  @extend .body1;
+}
 img {
   max-width: 100%;
   object-fit: contain;
