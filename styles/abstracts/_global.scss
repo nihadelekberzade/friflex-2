@@ -1,0 +1,32 @@
+.award-item {
+  &__place {
+    background: no-repeat url("../../img/icon/award-frame 1.jpg") center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 74px;
+    min-height: 70px;
+    @extend .h4;
+    color: $clr-lilac;
+    margin-bottom: 12px;
+  }
+}
+.award-list > *:not(:last-child ) {
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .award-item {
+    display: flex;
+    align-items: center;
+    &__place {
+      margin: 0 32px 0 0;
+      min-width: 105px;
+      min-height: 99px;
+    }
+  }
+  .award-list > *:not(:last-child ) {
+    margin-bottom: 40px;
+  }
+}

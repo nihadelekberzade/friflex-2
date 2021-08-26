@@ -23,6 +23,7 @@
 .h4 {
   font-size: 27px;
   line-height: 33px;
+  font-weight: 700;
   &--regular {
     @extend .h4;
     font-weight: 400;
@@ -47,10 +48,18 @@
 .body1 {
   font-size: 16px;
   line-height: 21px;
+  &--semibold {
+    @extend .body1;
+    font-weight: 600;
+  }
 }
 .body2 {
   font-size: 14px;
   line-height: 19px;
+  &--semibold {
+    @extend .body2;
+    font-weight: 600;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .h1 {

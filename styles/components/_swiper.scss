@@ -18,21 +18,15 @@
 .home .swiper-container {
   // display: flex;
 }
+.swiper-container {
+  overflow: hidden;
+}
 .home {
   .swiper-window {
     max-width: 1170px;
     overflow: hidden;
     margin: 0 15px;
   }
-}
-.home .swiper-slide {
-  width: 100vw;
-}
-.home .swiper-wrapper {
-  // margin-left: 50px;
-}
-.home .speaker-item {
-  // margin-right: 50px;
 }
 .swiper-index {
   @extend .body1;

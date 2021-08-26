@@ -1,7 +1,5 @@
 .btn-primary {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 600;
+  @extend .body1--semibold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,12 +26,37 @@
   }
 }
 .btn-header {
+  @extend .body2--semibold;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 14px 32px;
   max-height: 50px;
-  @extend .body2;
+  color: $clr-lilac;
+  border: 2px solid $clr-lilac;
+  border-radius: 6px;
+  transition: .3s;
+  svg {
+    margin-left: 12px;
+    & > * {
+      transition: .3s;
+    }
+  }
+  &:hover {
+    color: $clr-white;
+    background: $clr-lilac;
+  }
+  &:hover > svg > * {
+    fill: $clr-white;
+  }
+}
+.btn-2 {
+  @extend .body1--semibold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  max-height: 50px;
   color: $clr-lilac;
   border: 2px solid $clr-lilac;
   border-radius: 6px;
@@ -53,10 +76,8 @@
   }
 }
 .btn-tertiary {
-  font-size: 31px;
-  line-height: 40px;
+  @extend .sub1--bold;
   color: $clr-lilac;
-  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,12 +107,7 @@
 .btn-header,
 .btn-primary {
   width: 100%;
-}
-@media only screen and (min-width: 500px) {
-  .btn-primary,
-  .btn-tag,
-  .btn-header,
-  .btn-primary {
+  @media only screen and (min-width: 500px) {
     width: auto;
   }
 }
@@ -103,5 +119,8 @@
       background: $clr-black;
       color: $clr-white;
     }
+  }
+  .btn-2 {
+    padding: 16px 32px 17px;
   }
 }

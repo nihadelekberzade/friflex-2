@@ -4,8 +4,10 @@
     margin-bottom: 8px;
   }
   &__hero-img {
-    width: 100%;
     margin-bottom: 32px;
+    img {
+      width: 100%;
+    }
   }
   .thesis-card {
     padding: 24px 16px;
@@ -26,26 +28,89 @@
     }
   }
   .info-list {
+    padding-bottom: 80px;
     & > *:not(:last-child) {
       margin-bottom: 56px;
     }
     .info-item {
-      h2 {
+      h2, h4 {
         margin-bottom: 12px;
       }
+      h2 + h4 {
+        margin-top: -4px;
+      }
+      ul {
+        li {
+          display: flex;
+          align-items: flex-start;
+          color: $clr-black--light;
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+          p:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .review-card {
+      margin-bottom: 26px;
     }
   }
   .review-card {
-    background: $bg-gray--light;
+    margin: 26px 0;
+    background: $bg-gray;
     border-radius: 4px;
+    padding: 24px 16px;
+    &__author {
+      margin: 24px 0 2px;
+      @extend .body1--semibold;
+    }
   }
   @media only screen and (min-width: $desktop) {
     padding-top: 100px;
+    &__inner {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+      & > *:last-child {
+        flex: 1;
+        margin-right: 32px;
+      }
+      & > *:last-child {
+        flex-basis: 391px;
+      }
+    }
+    .info-list {
+      padding-bottom: 80px;
+      & > *:not(:last-child) {
+        margin-bottom: 80px;
+      }
+      .info-item {
+        h2 {
+          margin-bottom: 16px;
+        }
+        h4 {
+          margin-bottom: 16px;
+        }
+      }
+      .review-card {
+        margin: 40px 0 50px;
+      }
+    }
     &__title {
       margin-bottom: 14px;
     }
     &__hero-img {
       margin-bottom: 60px;
+    }
+    .thesis-card {
+      padding: 40px;
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
     }
   }
 }
