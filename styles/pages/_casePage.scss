@@ -66,6 +66,20 @@
       margin: 24px 0 2px;
       @extend .body1--semibold;
     }
+    &--img {
+      @extend .review-card;
+      &__footer {
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+      }
+      img {
+        margin-right: 30px;
+      }
+      &__author {
+        margin: 0 0 4px;
+      }
+    }
   }
   @media only screen and (min-width: $desktop) {
     padding-top: 100px;

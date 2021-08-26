@@ -41,12 +41,12 @@
 .mr-20 {
   margin-right: 20px;
 }
-.mobile {
+.mobile-only {
   @media only screen and (min-width: 1024px) {
     display: none !important;
   }
 }
-.desktop {
+.desktop-only {
   @media only screen and (max-width: 1024px) {
     display: none !important;
   }

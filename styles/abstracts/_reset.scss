@@ -29,6 +29,7 @@ a {
 }
 p {
   @extend .body1;
+  color: $clr-black--light;
 }
 img {
   max-width: 100%;

@@ -141,6 +141,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: #383838;
+}
+
 img {
   max-width: 100%;
   object-fit: contain;
@@ -365,13 +369,13 @@ button {
 }
 
 @media only screen and (min-width: 1024px) {
-  .mobile {
+  .mobile-only {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .desktop {
+  .desktop-only {
     display: none !important;
   }
 }
@@ -1152,10 +1156,10 @@ button {
 .case-section .info-list .info-item ul li p:first-child {
   margin-right: 10px;
 }
-.case-section .info-list .review-card {
+.case-section .info-list .review-card, .case-section .info-list .review-card--img {
   margin-bottom: 26px;
 }
-.case-section .review-card {
+.case-section .review-card, .case-section .review-card--img {
   margin: 26px 0;
   background: #f4f6f6;
   border-radius: 4px;
@@ -1163,6 +1167,17 @@ button {
 }
 .case-section .review-card__author {
   margin: 24px 0 2px;
+}
+.case-section .review-card--img__footer {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+}
+.case-section .review-card--img img {
+  margin-right: 30px;
+}
+.case-section .review-card--img__author {
+  margin: 0 0 4px;
 }
 @media only screen and (min-width: 1024px) {
   .case-section {
@@ -1192,7 +1207,7 @@ button {
   .case-section .info-list .info-item h4 {
     margin-bottom: 16px;
   }
-  .case-section .info-list .review-card {
+  .case-section .info-list .review-card, .case-section .info-list .review-card--img {
     margin: 40px 0 50px;
   }
   .case-section__title {
