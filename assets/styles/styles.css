@@ -120,13 +120,15 @@ title, script {
 }
 
 @font-face {
-  font-family: "Proxima-Nova";
-  src: url("/fonts/Proxima-Nova/Proxima-Nova_Regular.ttf") format("truetype");
-  /* IE6-IE8 */
+  font-family: "Proxima Nova Regular";
+  src: url("/assets/fonts/Proxima-Nova/ProximaNova-Regular.eot");
+  src: url("/assets/fonts/Proxima-Nova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Proxima-Nova/ProximaNova-Regular.woff") format("woff"), url("/assets/fonts/Proxima-Nova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   font-size: 14px;
-  font-family: "Proxima-Nova", "Arial", sans-serif;
+  font-family: "Proxima Nova Regular", "Arial", sans-serif;
   color: #1f1f1f;
 }
 
