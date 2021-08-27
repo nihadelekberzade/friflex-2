@@ -24,6 +24,12 @@
     background: $clr-black--light;
     color: $clr-white;
   }
+  &--hover {
+    @extend .btn-tag;
+    border-color: $clr-black--light !important;
+    background: $clr-black--light !important;
+    color: $clr-white !important;
+  }
 }
 .btn-header {
   @extend .body2--semibold;

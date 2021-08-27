@@ -1,0 +1,35 @@
+.services-page {
+  padding-top: 24px;
+  .service-list {
+    display: grid;
+    gap: 32px;
+  }
+  .service-type-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 32px 0 48px;
+  }
+  @media only screen and (min-width: $tablet) {
+    padding-top: 50px;
+    .service-list {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 29px;
+      row-gap: 30px;
+    }
+    .service-type-list {
+      margin: 80px 0 60px;
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    padding-top: 100px;
+    .service-list {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 29px;
+      row-gap: 30px;
+    }
+    .service-type-list {
+      gap: 30px;
+    }
+  }
+}
