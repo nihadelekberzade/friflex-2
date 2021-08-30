@@ -1,0 +1,181 @@
+.company-page {
+  &__img-thumbnail {
+    color: $clr-gray--dark;
+    margin-top: 12px;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__list {
+    padding: 32px 0 80px;
+  }
+  &__list > *:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  &__list > * {
+    .sub2--bold {
+      color: $clr-gray--dark;
+      margin-bottom: 8px;
+    }
+    .h4--regular {
+      margin-bottom: 12px;
+    }
+  }
+  &__member-list {
+    padding-bottom: 80px;
+    ul {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+      row-gap: 24px;
+    }
+  }
+  .member-item {
+    &__name {
+      @extend .sub2--bold;
+      margin: 10px 0 2px;
+    }
+    &__title {
+      color: $clr-gray--dark;
+    }
+    &--etc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100%;
+      text-align: center;
+      padding: 0 30px;
+      row-gap: 8px;
+      h3 {
+        color: $clr-lilac;
+      }
+    }
+  }
+  .section-awards {
+    padding: 64px 0;
+    margin-bottom: 80px;
+    background-color: $clr-lilac;
+    * {
+      color: $clr-white;
+    }
+    &__list {
+      padding-top: 24px;
+      display: grid;
+      row-gap: 32px;
+    }
+    &__item {
+      margin-bottom: 12px;
+      a {
+        color: #06bbce;
+        text-decoration: underline;
+      }
+    }
+  }
+  .section-clients {
+    padding-top: 80px;
+    ul {
+      padding: 32px 0 89px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      li {
+        img {
+          filter: grayscale(100%);
+          opacity: .6;
+        }
+        &:hover img {
+          filter: grayscale(0%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .look-at-jobs-banner {
+    padding: 64px 0;
+    h3 {
+      color: $clr-lilac;
+      margin-bottom: 24px;
+    }
+  }
+  .section-coop {
+    background-color: $bg-gray--light;
+  }
+  @media only screen and (min-width: $tablet) {
+    &__img-thumbnail {
+      margin-top: 24px;
+    }
+    &__member-list ul {
+      margin-top: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+      row-gap: 60px;
+    }
+    .section-awards {
+      padding: 100px 0;
+      margin-bottom: 130px;
+      &__list {
+        padding-top: 60px;
+        column-gap: 32px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      &__item img {
+        width: 221px;
+        margin: 0 auto 50px;
+      }
+    }
+    .section-clients {
+      ul {
+        padding: 60px 0 190px;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 70px;
+      }
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__list {
+      padding: 60px 0 190px;
+    }
+    &__list > *:not(:last-child) {
+      margin-bottom: 110px;
+    }
+    &__list > * {
+      .h4--regular {
+        margin-bottom: 16px;
+      }
+    }
+    &__member-list {
+      padding-bottom: 190px;
+      ul {
+        margin-top: 50px;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        row-gap: 60px;
+      }
+    }
+    .member-item {
+      h2 {
+        margin: 20px 0 6px;
+      }
+    }
+    .section-awards {
+      margin-bottom: 190px;
+    }
+    .section-clients {
+      padding-top: 190px;
+    }
+    .look-at-jobs-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 0;
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

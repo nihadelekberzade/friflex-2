@@ -4,33 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: block;
-}
-title, script {
-  display: none;
-}
-@font-face {
-  font-family: 'Proxima Nova Regular';
-  src: url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.eot');
-  src: url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.woff') format('woff'),
-  url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  font-size: 14px;
-  font-family: 'Proxima Nova Regular', 'Arial', sans-serif;
-  color: $clr-black;
-  background-color: $bg-gray--light;
 }
 ul,
 ol {
   list-style: none;
 }
+a, button, span {
+  display: inline-block;
+}
 a {
   color: inherit;
-  display: block;
   text-decoration: none;
 }
 p {
@@ -42,7 +25,8 @@ img {
   object-fit: contain;
 }
 input,
-button, textarea {
+button,
+textarea {
   outline: none;
   border: none;
   font-family: inherit;

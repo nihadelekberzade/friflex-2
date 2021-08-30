@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.eot');
+  src: url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.woff') format('woff'),
+  url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 14px;
+  font-family: 'Proxima Nova Regular', 'Arial', sans-serif;
+  color: $clr-black;
+}
 .container {
   max-width: 1274px;
   margin: 0 auto;

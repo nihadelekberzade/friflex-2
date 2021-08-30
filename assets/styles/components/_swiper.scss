@@ -6,8 +6,8 @@
 //   max-width: 1280px;
 //   margin: 0 30px;
 // }
-.home .swiper-button-prev,
-.home .swiper-button-next {
+.news-section .swiper-button-prev,
+.news-section .swiper-button-next {
   all: unset;
   cursor: pointer;
   margin: 0 20px;
@@ -21,7 +21,7 @@
 .swiper-container {
   overflow: hidden;
 }
-.home {
+.news-section {
   .swiper-window {
     max-width: 1170px;
     overflow: hidden;

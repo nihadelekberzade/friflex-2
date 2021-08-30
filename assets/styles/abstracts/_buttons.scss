@@ -37,7 +37,6 @@
   align-items: center;
   justify-content: center;
   padding: 14px 32px;
-  max-height: 50px;
   color: $clr-lilac;
   border: 2px solid $clr-lilac;
   border-radius: 6px;
@@ -62,7 +61,6 @@
   align-items: center;
   justify-content: center;
   padding: 14px 32px;
-  max-height: 50px;
   color: $clr-lilac;
   border: 2px solid $clr-lilac;
   border-radius: 6px;
@@ -77,7 +75,7 @@
     color: $clr-white;
     background: $clr-lilac;
   }
-  &:hover > svg > * {
+  &:hover svg > * {
     fill: $clr-white;
   }
 }
@@ -111,10 +109,11 @@
 .btn-primary,
 .btn-tag,
 .btn-header,
-.btn-primary {
+.btn-primary,
+.btn-2 {
   width: 100%;
   @media only screen and (min-width: 500px) {
-    width: auto;
+    width: max-content;
   }
 }
 @media only screen and (min-width: $desktop) {

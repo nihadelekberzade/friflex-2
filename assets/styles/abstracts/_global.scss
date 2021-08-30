@@ -16,6 +16,95 @@
 .award-list > *:not(:last-child ) {
   margin-bottom: 32px;
 }
+.service-list, .project-list {
+  display: grid;
+  gap: 32px;
+  & > * > * {
+    width: 100%;
+  }
+}
+.thesis-card {
+  padding: 24px 16px;
+  background: $bg-gray--light;
+  border-radius: 6px;
+  &__item {
+    h2 {
+      color: $clr-lilac;
+      margin-bottom: 2px;
+    }
+    p {
+      color: $clr-black--light;
+    }
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &--service {
+    background: $clr-white;
+    @extend .thesis-card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h4 {
+      @extend .h4;
+      color: $clr-lilac;
+    }
+    p {
+      @extend .sub2--bold;
+      color: $clr-black--light;
+      margin: 4px 0 16px;
+    }
+  }
+}
+.project-card {
+  img {
+    width: 100%;
+  }
+  &__title {
+    margin: 16px 0 6px;
+  }
+}
+.dotted-list {
+  li {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 26px;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 6px;
+      left: 0;
+      top: 10px;
+      border-radius: 50%;
+      background-color: $clr-black--light;
+    }
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
+.review-block {
+  padding: 24px 0;
+  border-top: 1px solid $clr-black--light;
+  border-bottom: 1px solid $clr-black--light;
+  &__author {
+    margin-bottom: 24px;
+    &-name {
+      margin: 8px 0 4px;
+      @extend .sub1--bold;
+    }
+  }
+  &__txt {
+    font-size: 20px;
+    line-height: 24px;
+    img {
+      display: none;
+    }
+  }
+}
 @media only screen and (min-width: 768px) {
   .award-item {
     display: flex;
@@ -28,5 +117,57 @@
   }
   .award-list > *:not(:last-child ) {
     margin-bottom: 40px;
+  }
+  .service-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: $desktop) {
+  .service-list, .project-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .project-card {
+    &__title {
+      margin-top: 20px;
+    }
+  }
+  .thesis-card {
+    padding: 40px;
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .dotted-list {
+    li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  .review-block {
+    padding: 60px 0;
+    display: flex;
+    align-items: flex-start;
+    &__author {
+      flex-basis: 288px;
+      margin-bottom: 0;
+      &-name {
+        margin: 24px 0 4px;
+      }
+    }
+    &__txt {
+      display: flex;
+      align-items: flex-start;
+      font-size: 31px;
+      line-height: 40px;
+      img {
+        display: initial;
+        margin-right: 60px;
+      }
+      flex: 1;
+      margin-left: 30px;
+    }
   }
 }

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		name="viewport"
+	/>
+	<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+	<title>Company</title>
+	<link
+		href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		rel="stylesheet"
+	/>
+	<link href="../assets/styles/styles.css" rel="stylesheet"/>
+	<script defer src="/scripts/header.js"></script>
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__left">
+				<a class="header__logo" href="index.html">
+					<img alt="logo" src="/assets/img/logo.svg"/>
+				</a>
+				<nav class="menu">
+					<ul>
+						<li>
+							<a href="Cases.html">Кейсы</a>
+						</li>
+						<li>
+							<a href="Services.html"> Услуги</a>
+						</li>
+						<li>
+							<a href="Flutter.html">Flutter</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<div class="dropdown__head">
+									О нас
+									<img
+										alt="arrow down"
+										src="/assets/img/icon/arrowDownShort.svg"
+									/>
+								</div>
+								<div class="dropdown__content">
+									<div class="dropdown__content-inner">
+										<ul>
+											<li>
+												<a href="AboutCompany.html"> О компании </a>
+											</li>
+											<li>
+												<a href="#"> Карьера </a>
+											</li>
+											<li>
+												<a href="#"> FinChess </a>
+											</li>
+											<li>
+												<a href="#"> Блог </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"> Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<button class="header__menu-btn">
+				<img alt="menu" src="../assets/img/icon/Menu.svg"/>
+			</button>
+			<div class="header__right">
+				<p class="body2">En</p>
+				<button class="btn-header">
+					Обсудить проект
+					<svg
+						fill="none"
+						height="17"
+						viewBox="0 0 16 17"
+						width="16"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z"
+							fill="#6645EA"
+						/>
+						<path
+							clip-rule="evenodd"
+							d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+							fill="#6645EA"
+							fill-rule="evenodd"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<nav class="header__menu-mobile header__menu-mobile--hidden mobile-only">
+			<ul class="sub1--bold">
+				<li>
+					<a href="#"> Кейсы</a>
+				</li>
+				<li>
+					<a href="Services.html"> Услуги</a>
+				</li>
+				<li>
+					<a href="Flutter.html">Flutter</a>
+				</li>
+				<li>
+					<a href="#"> О компании</a>
+				</li>
+				<li>
+					<a href="#"> Карьера</a>
+				</li>
+				<li>
+					<a href="#"> Блог</a>
+				</li>
+				<li>
+					<a href="#"> Контакты</a>
+				</li>
+				<li>
+					<a href="#"> Ru / En </a>
+				</li>
+				<li>О нас</li>
+			</ul>
+			<button class="btn-header">
+				Обсудить проект
+				<svg
+					fill="none"
+					height="17"
+					viewBox="0 0 16 17"
+					width="16"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z"
+						fill="#6645EA"
+					/>
+					<path
+						clip-rule="evenodd"
+						d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+						fill="#6645EA"
+						fill-rule="evenodd"
+					/>
+				</svg>
+			</button>
+			<div class="header__menu-mobile-footer sub1--bold">
+				<a href="tel:+7 (495) 131-54-96">+7 (495) 131-54-96</a>
+				<a href="mailto: hello@friflex.com"> hello@friflex.com </a>
+			</div>
+		</nav>
+	</div>
+</header>
+<main class="company-page">
+	<section class="hero">
+		<div class="container">
+			<h2 class="h2 company-page__title">
+				Привет, это Friflex
+			</h2>
+			<p>
+				Мы разрабатываем мобильные приложения и сайты, которыми пользуются миллионы, и помогаем развивать бизнес с
+				помощью технологичных решений.
+				<br> <br>
+				Наша миссия – создавать успешные пользовательские продукты, которые сделают жизнь удобнее, упрощать и
+				оптимизировать бизнес-процессы, предлагать новые цифровые решения.
+			</p>
+			<div class="company-page__list">
+				<div>
+					<picture>
+						<source media="(min-width:1024px)"
+						        srcset="/assets/img/about/company-desktop.jpg">
+						<img src="/assets/img/about/company-mobile.jpg" alt="company">
+					</picture>
+					<p class="company-page__img-thumbnail">
+						Наш уютный офис в Иннополисе
+					</p>
+				</div>
+				<div>
+					<h2 class="sub2--bold">
+						Наши офисы
+					</h2>
+					<h4 class="h4--regular">
+						Москва и ОЭЗ «Иннополис»
+					</h4>
+					<p>
+						Обосновавшись в уютном офисе в центре Москвы, мы решили, что пора открывать новые горизонты. Мы открыты
+						новому, поддерживаем и создаем инновации, поэтому мы стали частью экосистемы Технопарка в самом
+						инновационном, технологичном, но при этом маленьком городе России – Иннополисе.
+						Здесь работает наша мощная команда по Machine learning и мобильной разработке. А у нас появилось свое место
+						для выездных стратегических сессий, которые мы регулярно проводим.
+						Часть нашей команды работает удаленно, но это не мешает нам развивать копоративную культуру и крепкие,
+						надежные отношения в команде.
+					</p>
+					<picture>
+						<source media="(min-width: 1024px)"
+						        srcset="/assets/img/about/offices-map-desktop.png">
+						<img src="/assets/img/about/offices-map-mobile.png" alt="offices">
+					</picture>
+				</div>
+				<div>
+					<h4 class="h4--regular">
+						Формируем комьюнити и играем в шахматы
+					</h4>
+					<p>
+						С 2018 года мы проводим FinChess – шахматный турнир среди финансовых, ИТ-компаний и СМИ. Это мероприятие
+						родилось из нашей корпоративной традиции Friflex играть в шахматы с коллегами.
+						Из любви к шахматам и желания сделать классный продукт для шахматистов всего мира мы придумали idChess – наш
+						флагманский проект в сфере оцифровки спорта. Вот тут мы рассказывали о нем подробнее.
+					</p>
+				</div>
+				<div>
+					<h4 class="h4--regular">
+						Делимся опытом
+					</h4>
+					<p>
+						Мы специализируемся на кросс-платформенной разработке мобильных приложений, равиваем Flutter-разработку в
+						России. В нашей команде 15+ сильных Flutter разработчиков.
+						Мы открыто делимся с другими опытом создания кроссплатформенных приложений. Наши сотрудники преподают в
+						российских вузах и школах по программированию. В сентябре 2020 года совместно с образовательной
+						онлайн-платформой Otus мы запустили курс по программированию на Flutter.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-team">
+		<div class="container">
+			<div class="company-page__member-list">
+				<h3 class="h3">Наша команда</h3>
+				<ul>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/petr-desktop.jpg">
+								<img src="/assets/img/members/petr-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Пётр</h2>
+							<p class="member-item__title">CEO</p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/nikolay-desktop.jpg">
+								<img src="/assets/img/members/nikolay-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Николай</h2>
+							<p class="member-item__title">Руководитель проектов</p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/aleksandr-desktop.jpg">
+								<img src="/assets/img/members/aleksandr-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Александр</h2>
+							<p class="member-item__title">Руководитель проектов</p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/nikita-desktop.jpg">
+								<img src="/assets/img/members/nikita-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Никита</h2>
+							<p class="member-item__title">Head of Mobile
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/olga-desktop.jpg">
+								<img src="/assets/img/members/olga-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Ольга</h2>
+							<p class="member-item__title">Директор по маркетингу </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/iqor-desktop.jpg">
+								<img src="/assets/img/members/iqor-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Игорь</h2>
+							<p class="member-item__title">Руководитель технической поддержки </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/andrey-desktop.jpg">
+								<img src="/assets/img/members/andrey-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Андрей</h2>
+							<p class="member-item__title">ML-инженер </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/svetlana-desktop.jpg">
+								<img src="/assets/img/members/svetlana-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Светлана</h2>
+							<p class="member-item__title">Ведущий дизайнер </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/darya-desktop.jpg">
+								<img src="/assets/img/members/darya-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Дарья</h2>
+							<p class="member-item__title">Дизайнер </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/venera-desktop.jpg">
+								<img src="/assets/img/members/venera-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Венера</h2>
+							<p class="member-item__title">Дизайнер</p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/sergey-desktop.jpg">
+								<img src="/assets/img/members/sergey-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Сергей</h2>
+							<p class="member-item__title">Performance-маркетолог </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/gleb-desktop.jpg">
+								<img src="/assets/img/members/gleb-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Глеб</h2>
+							<p class="member-item__title">ML developer </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/danil-desktop.jpg">
+								<img src="/assets/img/members/danil-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Данил</h2>
+							<p class="member-item__title">Ruby-on-Rails dev </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/said-desktop.jpg">
+								<img src="/assets/img/members/said-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Саид</h2>
+							<p class="member-item__title">Аналитик </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item">
+							<picture>
+								<source media="(min-width:1024px)" srcset="/assets/img/members/yan-desktop.jpg">
+								<img src="/assets/img/members/yan-mobile.jpg" alt="team member">
+							</picture>
+							<h2 class="member-item__name">Ян</h2>
+							<p class="member-item__title">Frontend developer </p>
+						</div>
+					</li>
+					<li>
+						<div class="member-item--etc">
+							<h3 class="h3">+25</h3>
+							<h4 class="sub1--bold">классных специалистов</h4>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="section-awards">
+		<div class="container">
+			<h3 class="h3">Наши награды</h3>
+			<ul class="section-awards__list">
+				<li>
+					<div class="section-awards__item">
+						<picture>
+							<source media="(min-width:768px)" srcset="/assets/img/about/award-1-desktop.png">
+							<img src="/assets/img/about/award-1-mobile.png" alt="awards">
+						</picture>
+						<p>
+							Первый лауреат <a href="#">конкурса</a> ИИ для ЦУР (в рамках Skolkovo Tech Accelerator)
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="section-awards__item">
+						<picture>
+							<source media="(min-width:768px)" srcset="/assets/img/about/award-2-desktop.png">
+							<img src="/assets/img/about/award-2-mobile.png" alt="awards">
+						</picture>
+						<p>
+							CSTSC (Continental Sport Tech Startup Challenge)
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="section-awards__item">
+						<picture>
+							<source media="(min-width:768px)" srcset="/assets/img/about/award-3-desktop.png">
+							<img src="/assets/img/about/award-3-mobile.png" alt="awards">
+						</picture>
+						<p>
+							В 2019 году наш проект idChess стал победителем <a href="#">конкурса</a> спортивно-технологических
+							стартапов CSTSC (Continental Sport Tech Startup Challenge) в рамках Премии <a href="#">Bispo Awards</a>.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="news-section">
+		<div class="container">
+			<div class="news-section__header">
+				<h3 class="news-section__title h3">Friflex – эксперты в СМИ</h3>
+				<div class="flex desktop-only">
+					<button class="swiper-button-prev">
+						<img alt="arrow left" src="../assets/img/icon/arrowLeft.svg"/>
+					</button>
+					<div class="swiper-index swiper-index--active">01 &nbsp;</div>
+					<div class="swiper-index swiper-index--max">/&nbsp; 02</div>
+					<button class="swiper-button-next">
+						<img alt="arrow right" src="../assets/img/icon/arrowRight.svg"/>
+					</button>
+				</div>
+			</div>
+			<div class="swiper-container news-swiper mb-24">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a class="news-cart" href="#">
+							<div class="news-cart__img">
+								<img alt="news" src="../assets/img/news/news1.jpg"/>
+							</div>
+							<div class="news-cart__content">
+								<div class="news-cart__content-head">
+									<img
+										alt="news logo"
+										class="news-cart__logo"
+										src="../assets/img/news/Logos%20for%20news%20mobile.svg"
+									/>
+									<div class="news-cart__date">08 июня 2021</div>
+								</div>
+								<p class="news-cart__txt">
+									Кросс-платформенная разработка мобильных приложений: в чем
+									плюсы...
+								</p>
+								<div class="news-cart__tag">#Разработка</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="news-cart" href="#">
+							<div class="news-cart__img">
+								<img alt="news" src="../assets/img/news/news2.jpg"/>
+							</div>
+							<div class="news-cart__content">
+								<div class="news-cart__content-head">
+									<img
+										alt="news logo"
+										class="news-cart__logo"
+										src="../assets/img/news/logo2.svg"
+									/>
+									<div class="news-cart__date">24 марта 2021</div>
+								</div>
+								<p class="news-cart__txt">
+									ТЗ на разработку. Как его написать, если вы не айтишник?
+								</p>
+								<div class="news-cart__tag">#Разработка</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="news-cart" href="#">
+							<div class="news-cart__img">
+								<img alt="news" src="../assets/img/news/news3.jpg"/>
+							</div>
+							<div class="news-cart__content">
+								<div class="news-cart__content-head">
+									<img
+										alt="news logo"
+										class="news-cart__logo"
+										src="../assets/img/news/logo3.svg"
+									/>
+									<div class="news-cart__date">04 февраля 2021</div>
+								</div>
+								<p class="news-cart__txt">
+									Мобильное приложение для интернет-магазина: нужно ли оно,
+									какой функционал, сколько стоит
+								</p>
+								<div class="news-cart__tag">#Разработка</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="news-cart" href="#">
+							<div class="news-cart__img">
+								<img alt="news" src="../assets/img/news/news1.jpg"/>
+							</div>
+							<div class="news-cart__content">
+								<div class="news-cart__content-head">
+									<img
+										alt="news logo"
+										class="news-cart__logo"
+										src="../assets/img/news/Logos%20for%20news%20mobile.svg"
+									/>
+									<div class="news-cart__date">08 июня 2021</div>
+								</div>
+								<p class="news-cart__txt">
+									Кросс-платформенная разработка мобильных приложений: в чем
+									плюсы...
+								</p>
+								<div class="news-cart__tag">#Разработка</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="news-cart" href="#">
+							<div class="news-cart__img">
+								<img alt="news" src="../assets/img/news/news1.jpg"/>
+							</div>
+							<div class="news-cart__content">
+								<div class="news-cart__content-head">
+									<img
+										alt="news logo"
+										class="news-cart__logo"
+										src="../assets/img/news/Logos%20for%20news%20mobile.svg"
+									/>
+									<div class="news-cart__date">08 июня 2021</div>
+								</div>
+								<p class="news-cart__txt">
+									Кросс-платформенная разработка мобильных приложений: в чем
+									плюсы...
+								</p>
+								<div class="news-cart__tag">#Разработка</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex justify-end desktop-only">
+				<a href="#" class="btn-tertiary">
+					Все статьи
+					<svg
+						fill="none"
+						height="32"
+						viewBox="0 0 32 32"
+						width="32"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2.66666 14.2761H26.6667V16.9428H2.66666V14.2761Z"
+							fill="#6645EA"
+						/>
+						<path
+							clip-rule="evenodd"
+							d="M24.9706 15.7042L16.4853 7.21893L18.3709 5.33331L28.7418 15.7042L18.3709 26.0751L16.4853 24.1895L24.9706 15.7042Z"
+							fill="#6645EA"
+							fill-rule="evenodd"
+						/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="section-clients">
+		<div class="container">
+			<h3 class="h3">СМИ о наших клиентах </h3>
+			<ul>
+				<li>
+					<a href="https://pro.rbc.ru/demo/5ee118bd9a7947dbdc4a2b7b">
+						<img src="/assets/img/clients/rbk-desktop.png" alt="rbk">
+					</a>
+				</li>
+				<li>
+					<a href="https://incrussia.ru/understand/kak-prodavat-po-vzroslomu/">
+						<img src="/assets/img/clients/inc-russia-desktop.png" alt="inc-russia">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.vedomosti.ru/management/articles/2020/02/20/823551-bivshie-menedzheri">
+						<img src="/assets/img/clients/vedomosti-desktop.png" alt="vedomosti">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.kommersant.ru/doc/4836017">
+						<img src="/assets/img/clients/kommersant-desktop.png" alt="kommersant">
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://secretmag.ru/selfie/kogda-draiver-dlya-biznesa-materinskaya-bol-istoriya-yakutskogo-startapa-ozhivlyayushego-detskie-knigi.html">
+						<img src="/assets/img/clients/secret-mag-desktop.png" alt="secret-mag">
+					</a>
+				</li>
+				<li>
+					<a href="https://rg.ru/2020/06/17/kak-molodaia-mama-sozdala-obrazovatelnuiu-platformu-dlia-doshkolnikov.html">
+						<img src="/assets/img/clients/rg-desktop.png" alt="rg">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.the-village.ru/food/delivery/381513-dostavki">
+						<img src="/assets/img/clients/village-desktop.png" alt="village"/>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://techfusion.ru/startap-iz-yakutska-jera-uv-prodal-tysyachu-sterilizatorov-veshhej-s-pomoshhyu-sarafannogo-radio/">
+						<img src="/assets/img/clients/tech-fusion-desktop.png" alt="tech-fusion">
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://biz360.ru/materials/chtoby-ne-bylo-muchitelno-dolgo-kak-ustroen-servis-lokalnoy-kurerskoy-dostavki/">
+						<img src="/assets/img/clients/biz-360-desktop.png" alt="secret-mag">
+					</a>
+				</li>
+				<li>
+					<a href="https://vc.ru/yakutia">
+						<img src="/assets/img/clients/vc-desktop.png" alt="rg">
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.comnews.ru/digital-economy/content/208230/2020-07-22/2020-w30/rezident-tekhnoparka-yakutiya-sozdal-igru-dlya-reabilitacii-detey-dcp">
+						<img src="/assets/img/clients/comnews-desktop.png" alt="comnews"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://lifehacker.ru/kak-spasti-biznes-v-krizis/">
+						<img src="/assets/img/clients/lifehacker-desktop.png" alt="lifehacker">
+					</a>
+				</li>
+				<li>
+					<a href="https://rb.ru/longread/yakutia-innovation/">
+						<img src="/assets/img/clients/rusbase-desktop.png" alt="rusbase"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.buro247.ru/beauty/trends/21-may-2020-new-what-does-it-mean-supergreen.html">
+						<img src="/assets/img/clients/buro-desktop.png" alt="buro">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section-coop">
+		<div class="container">
+			<div class="look-at-jobs-banner">
+				<h3 class="h3">
+					Проект вместе с Friflex?
+				</h3>
+				<a href="#" class="btn-2">
+					Оставить заявку
+					<svg
+						fill="none"
+						height="17"
+						viewBox="0 0 17 17"
+						width="17"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M1.33301 7.63806H13.333V8.9714H1.33301V7.63806Z"
+							fill="#6645EA"
+						/>
+						<path
+							clip-rule="evenodd"
+							d="M12.4854 8.35214L8.24274 4.1095L9.18555 3.16669L14.371 8.35214L9.18555 13.5376L8.24274 12.5948L12.4854 8.35214Z"
+							fill="#6645EA"
+							fill-rule="evenodd"
+						/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__logo">
+				<img alt="logo footer" src="../assets/img/logoFooter.svg"/>
+				<div class="body2 desktop-only">© Friflex LLC, 2021</div>
+			</div>
+			<div class="footer__field">
+				<h2 class="body1 footer__field-title">Больше о нас</h2>
+				<ul class="footer__field-list">
+					<li>
+						<a href="#"> О компании </a>
+					</li>
+					<li>
+						<a href="#"> Карьера в Friflex </a>
+					</li>
+					<li>
+						<a href="#"> Блог </a>
+					</li>
+					<li>
+						<a href="#"> Контакты </a>
+					</li>
+					<li>
+						<a href="#"> Политика конфиденциальности </a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__field footer__field--projects">
+				<h2 class="body1 footer__field-title">Больше о нас</h2>
+				<ul class="footer__field-list">
+					<li>
+						<a href="#"> FinСhess </a>
+					</li>
+					<li>
+						<a href="#"> IdChess </a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__field">
+				<a
+					class="body1 footer__field-title"
+					href="mailto: hello@friflex.com"
+				>
+					hello@friflex.com
+				</a>
+				<ul class="footer__field-list">
+					<li>
+						<a href="tel:+7 (495) 131-54-96">+7 (495) 131-54-96</a>
+					</li>
+					<li>
+						<div class="footer__socials">
+							<a href="#"
+							><img alt="facebook" src="../assets/img/footer/facebookFooter.svg"
+							/></a>
+							<a href="#"
+							><img alt="linkedin" src="../assets/img/footer/linkedinFooter.svg"
+							/></a>
+							<a href="#"
+							><img alt="behance" src="../assets/img/footer/behanceFooter.svg"
+							/></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__field">
+				<div class="body2 mobile-only" style="margin-top: 40px">
+					© Friflex LLC, 2021
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  let swiper = new Swiper(".news-swiper", {
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".news-section .swiper-button-next",
+      prevEl: ".news-section .swiper-button-prev",
+    },
+    spaceBetween: 20,
+    breakpoints: {
+      // when window width is >= 480px
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+      },
+      // when window width is >= 640px
+    },
+  });
+  swiper.on("activeIndexChange", (e) => {
+    document.querySelector(".swiper-index--active").innerHTML = `0${
+      e.progress + 1
+    } &nbsp;`;
+  });
+  let partnersSwiper = new Swiper(".partners-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      // when window width is >= 480px
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 64,
+      },
+      // when window width is >= 640px
+    },
+  });
+</script>
+</body>
+</html>

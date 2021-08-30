@@ -9,24 +9,6 @@
       width: 100%;
     }
   }
-  .thesis-card {
-    padding: 24px 16px;
-    background: $bg-gray--light;
-    border-radius: 6px;
-    margin-bottom: 56px;
-    &__item {
-      h2 {
-        color: $clr-lilac;
-        margin-bottom: 2px;
-      }
-      p {
-        color: $clr-black--light;
-      }
-      &:not(:last-child) {
-        margin-bottom: 16px;
-      }
-    }
-  }
   .info-list {
     padding-bottom: 80px;
     & > *:not(:last-child) {
@@ -117,14 +99,6 @@
     }
     &__hero-img {
       margin-bottom: 60px;
-    }
-    .thesis-card {
-      padding: 40px;
-      &__item {
-        &:not(:last-child) {
-          margin-bottom: 24px;
-        }
-      }
     }
   }
 }
