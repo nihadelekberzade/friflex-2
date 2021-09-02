@@ -9,6 +9,7 @@
     .form-field {
       input, textarea {
         color: $clr-gray--dark;
+        background-color: $bg-gray--light;
       }
       &:not(:last-child) {
         margin-bottom: 16px;

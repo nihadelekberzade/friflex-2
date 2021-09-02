@@ -5,11 +5,11 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Services</title>
+	<title>Contacts</title>
 	<link href="../assets/styles/styles.css" rel="stylesheet"/>
 	<script defer src="/scripts/header.js"></script>
 </head>
-<body class="bg-gray--light">
+<body>
 <header class="header">
 	<div class="container">
 		<div class="header__inner">
@@ -147,77 +147,81 @@
 		</nav>
 	</div>
 </header>
-<main class="services-page">
-	<div class="container">
-		<h2 class="h2">
-			Наши услуги
-		</h2>
-		<ul class="toggle-list">
-			<li>
-				<a href="#" class="btn-tag--hover">
-					Все
-				</a>
-			</li>
-			<li>
-				<a href="ServiceMobileDev.html" class="btn-tag">
-					Мобильная разработка
-				</a>
-			</li>
-			<li>
-				<a href="#" class="btn-tag">
-					Web-разработка
-				</a>
-			</li>
-			<li>
-				<a href="#" class="btn-tag">
-					Дизайн
-				</a>
-			</li>
-			<li>
-				<a href="#" class="btn-tag">
-					Машинное обучение
-				</a>
-			</li>
-		</ul>
-		<ul class="service-list">
-			<li>
-				<a class="service-card" href="#">
-					<h2 class="service-card__title">
-						Разработка мобильных приложений
-					</h2>
-					<h3 class="service-card__subtitle">
-						Кроссплатформенных и нативных
-					</h3>
-					<p class="service-card__price">От 2000 руб в час</p>
-				</a>
-			</li>
-			<li>
-				<a class="service-card" href="#">
-					<h2 class="service-card__title">Web-разработка</h2>
-					<h3 class="service-card__subtitle">
-						Создание сайтов, фронтенд и бэкенд
-					</h3>
-					<p class="service-card__price">От 2000 руб в час</p>
-				</a>
-			</li>
-			<li>
-				<a class="service-card" href="#">
-					<h2 class="service-card__title">Аналитика</h2>
-					<h3 class="service-card__subtitle">Анализ данных</h3>
-					<p class="service-card__price">От 1000 руб в час</p>
-				</a>
-			</li>
-			<li>
-				<a class="service-card" href="#">
-					<h2 class="service-card__title">Аудит</h2>
-					<h3 class="service-card__subtitle">
-						Скрупулезная проверка ИТ-продуктов
-					</h3>
-					<p class="service-card__price">От 2500 руб в час</p>
-				</a>
-			</li>
-		</ul>
-		<section class="contact-us">
+<main class="contacts-page">
+	<div class="hero">
+		<div class="container">
+			<h2 class="h2">
+				Контакты Friflex
+			</h2>
+			<ul class="contact-list">
+				<li>
+					<div class="contact-item">
+						<p>
+							По всем вопросам:
+						</p>
+						<h4 class="h4--regular">
+							hello@friflex.com
+						</h4>
+					</div>
+				</li>
+				<li>
+					<div class="contact-item">
+						<p>
+							Для СМИ
+						</p>
+						<h4 class="h4--regular">
+							pr@friflex.com
+						</h4>
+					</div>
+				</li>
+				<li>
+					<div class="contact-item">
+						<p>
+							Для соискателей
+						</p>
+						<h4 class="h4--regular">
+							hr@friflex.com
+						</h4>
+					</div>
+				</li>
+			</ul>
+			<ul class="office-list">
+				<li>
+					<div class="office-item">
+						<picture>
+							<source media="(min-width:1024px" srcset="/assets/img/offices/office-1-desktop.jpg">
+							<img src="/assets/img/offices/office-1-mobile.jpg" alt="office 1">
+						</picture>
+						<h2 class="office-item__city">
+							Москва
+						</h2>
+						<p class="office-item__address">
+							117638, Криворожская улица, 6Ас2, БЦ «Содружество», офис 319
+						</p>
+						<p class="office-item__phone">
+							+7 (495) 131-54-96
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="office-item">
+						<picture>
+							<source media="(min-width:1024px" srcset="/assets/img/offices/office-2-desktop.jpg">
+							<img src="/assets/img/offices/office-2-mobile.jpg" alt="office 1">
+						</picture>
+						<h2 class="office-item__city">
+							Иннополис
+						</h2>
+						<p class="office-item__address">
+							117638, Технопарк имени Н.И.Лобачевского, офис 10
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="contact-us">
+		<div class="container">
 			<h2 class="contact-us__title h3">Напишите нам</h2>
 			<div class="contact-us__inner">
 				<div class="desktop-only">
@@ -300,8 +304,8 @@
 					</div>
 				</form>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 </main>
 <footer class="footer">
 	<div class="container">

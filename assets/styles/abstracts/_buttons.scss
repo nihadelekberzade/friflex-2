@@ -93,19 +93,6 @@
     transform: translateX(8px);
   }
 }
-.btn-tag {
-  border: 1px solid $clr-gray;
-  border-radius: 24px;
-  background: $clr-white;
-  color: $clr-black;
-  @extend .body1;
-  padding: 8px 24px;
-  transition: .3s;
-  &:hover {
-    background: $clr-black;
-    color: $clr-white;
-  }
-}
 .btn-primary,
 .btn-tag,
 .btn-header,

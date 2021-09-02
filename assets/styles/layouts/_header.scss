@@ -67,17 +67,18 @@
     }
     .menu {
       display: initial;
+      margin-left: 50px;
+      & > ul {
+        display: flex;
+        align-items: flex-end;
+        gap: 50px;
+      }
+      a:hover {
+        color: $clr-lilac;
+      }
     }
     &__menu-btn {
       display: none;
-    }
-    .menu {
-      margin-left: 50px;
-    }
-    .menu > ul {
-      display: flex;
-      align-items: flex-end;
-      gap: 50px;
     }
     .dropdown {
       position: relative;

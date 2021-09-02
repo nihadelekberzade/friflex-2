@@ -1,0 +1,45 @@
+.step-item {
+  position: relative;
+  background-color: $bg-card-gray;
+  padding: 40px 16px 100px;
+  &__title {
+    @extend .sub2--bold;
+    margin-bottom: 8px;
+    color: $clr-black--light;
+  }
+  &__txt {
+    @extend .body2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    bottom: 40px;
+    width: 94px;
+    min-height: 56px;
+    background: no-repeat url("/assets/img/icon/step-arrow.png") center center;
+  }
+  &::after {
+    position: absolute;
+    right: 16px;
+    bottom: 36px;
+    @extend .h1;
+    color: $clr-lilac;
+  }
+  @media only screen and (min-width: $desktop) {
+    padding: 40px 41px 141px 40px;
+    &__title {
+      margin-bottom: 10px;
+    }
+    &::before {
+      width: 120px;
+      min-height: 73.5px;
+      left: 40px;
+      bottom: 41.87px;
+    }
+    &::after {
+      right: 42px;
+      bottom: 11px;
+    }
+  }
+}

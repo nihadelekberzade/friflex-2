@@ -105,7 +105,18 @@
     }
   }
 }
-@media only screen and (min-width: 768px) {
+.grid-list {
+  display: grid;
+  gap: 40px;
+  & > * > * {
+    width: 100%;
+  }
+}
+.contacts-page__all-news-btn {
+  width: 100%;
+  margin-top: 35px;
+}
+@media only screen and (min-width: $tablet) {
   .award-item {
     display: flex;
     align-items: center;
@@ -124,6 +135,14 @@
   }
 }
 @media only screen and (min-width: $desktop) {
+  .contacts-page__all-news-btn {
+    margin-top: 60px;
+  }
+  .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+  }
   .service-list, .project-list {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;

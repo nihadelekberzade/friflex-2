@@ -1,0 +1,18 @@
+.career-page {
+  counter-reset: count;
+  .section-internship {
+    padding: 80px 0;
+    .step-item {
+      min-height: 100%;
+      &:after {
+        counter-increment: count;
+        content: counter(count);
+      }
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    .section-internship {
+      padding: 190px 0;
+    }
+  }
+}
