@@ -12,21 +12,25 @@
   font-size: 56px;
   font-weight: 700;
   line-height: 68px;
+  font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
 }
 .h2 {
   font-size: 42px;
   font-weight: 700;
   line-height: 51px;
+  font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
 }
 .h3 {
   font-size: 34px;
   font-weight: 700;
   line-height: 41px;
+  font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
 }
 .h4 {
   font-size: 27px;
   line-height: 33px;
   font-weight: 700;
+  font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
   &--regular {
     @extend .h4;
     font-weight: 400;
@@ -38,6 +42,7 @@
   &--bold {
     @extend .sub1;
     font-weight: 700;
+    font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
   }
 }
 .sub2 {
@@ -46,6 +51,7 @@
   &--bold {
     @extend .sub2;
     font-weight: 700;
+    font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
   }
 }
 .body1 {
@@ -54,6 +60,7 @@
   &--semibold {
     @extend .body1;
     font-weight: 600;
+    font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
   }
 }
 .body2 {
@@ -62,6 +69,7 @@
   &--semibold {
     @extend .body2;
     font-weight: 600;
+    font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
   }
 }
 @media only screen and (min-width: 1024px) {

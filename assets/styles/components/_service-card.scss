@@ -6,15 +6,15 @@
   flex-direction: column;
   min-height: 250px;
   &__title {
+    @extend .sub2--bold;
     margin-bottom: 8px;
-    font-size: 25px;
-    line-height: 34px;
   }
   &__subtitle {
-    font-size: 20px;
-    line-height: 27px;
+    color: $clr-black--light;
   }
   &__price {
+    @extend .body2;
+    color: $clr-black--light;
     margin-top: auto;
   }
   @media only screen and (min-width: $desktop) {
