@@ -49,15 +49,12 @@
           margin-right: 24px;
         }
         &-name {
-          font-size: 20px;
-          line-height: 27px;
-          font-weight: 600;
+          @extend .body1--semibold;
           margin-bottom: 4px;
         }
         &-title {
-          font-size: 20px;
-          line-height: 27px;
-          font-weight: 400;
+         @extend .body1;
+         font-weight: 400;
         }
       }
       &--diksi {
@@ -70,7 +67,7 @@
         background: $clr-lilac;
       }
       &--energogarant {
-        background: $clr-lilac--2;
+        background: $clr-lilac--3;
       }
     }
   }

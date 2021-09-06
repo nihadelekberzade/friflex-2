@@ -66,7 +66,10 @@
       row-gap: 32px;
     }
     &__item {
-      margin-bottom: 12px;
+      img {
+        margin-bottom: 12px;
+        max-width: 93px;
+      }
       a {
         color: #06bbce;
         text-decoration: underline;
@@ -114,7 +117,7 @@
         grid-template-columns: repeat(3, 1fr);
       }
       &__item img {
-        width: 221px;
+        max-width: 221px;
         margin: 0 auto 50px;
       }
     }

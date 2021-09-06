@@ -33,6 +33,7 @@
   font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
   &--regular {
     @extend .h4;
+    font-family: 'Proxima Nova Regular',Arial,sans-serif;
     font-weight: 400;
   }
 }

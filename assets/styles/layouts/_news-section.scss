@@ -5,12 +5,18 @@
   &__title {
     color: $clr-black--light;
   }
+  .swiper-container {
+    margin-bottom: 24px;
+  }
   @media only screen and (min-width: $desktop) {
     &__header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 50px;
+    }
+    .swiper-container {
+      margin-bottom: 53px;
     }
   }
 }
