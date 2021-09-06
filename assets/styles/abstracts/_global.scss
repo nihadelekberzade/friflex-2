@@ -1,8 +1,6 @@
 .award-item {
   &__place {
-    background: no-repeat url("../../img/icon/award-frame 1.jpg") center;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: no-repeat url("/assets/img/icon/award-frame 1.jpg") center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +25,7 @@
   padding: 24px 16px;
   background: $bg-gray--light;
   border-radius: 6px;
+  
   &__item {
     h2 {
       color: $clr-lilac;
@@ -135,6 +134,13 @@
   }
 }
 @media only screen and (min-width: $desktop) {
+  .thesis-card.sticky {
+    position: sticky;
+    top: 20px;
+    left: 50%;
+    right: 50%;
+    bottom: 20px;
+  }
   .contacts-page__all-news-btn {
     margin-top: 60px;
   }

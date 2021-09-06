@@ -2,10 +2,7 @@
   background-color: $clr-white;
   .hero {
     padding: 24px 0 64px;
-    &__title {
-      @extend .h2;
-    }
-    &__subtitle {
+    .flutter-page-hero__subtitle {
       font-size: 34px;
       line-height: 41px;
       font-weight: 400;
@@ -57,20 +54,22 @@
       }
     }
   }
-  .news-section__uptitle {
-    margin-bottom: 40px;
+  .news-section {
+    &__inner {
+      padding: 64px 0;
+      background-color: $bg-gray--light;
+    }
+    &__uptitle {
+      margin-bottom: 40px;
+    }
   }
   @media only screen and (min-width: $desktop) {
     .hero {
       padding: 100px 0;
-      &__title {
+      .flutter-page-hero__subtitle {
+        margin: 8px 0 40px;
         font-size: 70px;
         line-height: 82px;
-      }
-      &__subtitle {
-        margin: 12px 0 40px;
-        font-size: 49px;
-        line-height: 59px;
       }
     }
     .intro {
@@ -105,8 +104,13 @@
         padding: 71px 106px;
       }
     }
-    .news-section__uptitle {
-      margin-bottom: 100px;
+    .news-section {
+      &__inner {
+        padding: 100px 0;
+      }
+      &__uptitle {
+        margin-bottom: 100px;
+      }
     }
   }
 }
