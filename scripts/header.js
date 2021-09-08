@@ -5,7 +5,6 @@ document.querySelector('.header__menu-btn').addEventListener('click', () => {
   mobileMenu.classList.toggle('header__menu-mobile--hidden');
 })
 document.querySelectorAll('.header .dropdown').forEach(el => {
-  console.log(el);
   el.addEventListener('mouseover', () => {
     el.querySelector('.dropdown__content').style.height = `${el.querySelector('.dropdown__content-inner').offsetHeight.toString()}px`;
     el.querySelector('.dropdown__content').style.opacity = '1';

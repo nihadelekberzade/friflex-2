@@ -80,19 +80,6 @@
     padding-top: 80px;
     ul {
       padding: 32px 0 89px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 32px;
-      li {
-        img {
-          filter: grayscale(100%);
-          opacity: .6;
-        }
-        &:hover img {
-          filter: grayscale(0%);
-          opacity: 1;
-        }
-      }
     }
   }
   .section-coop {
@@ -124,8 +111,6 @@
     .section-clients {
       ul {
         padding: 60px 0 190px;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 70px;
       }
     }
   }

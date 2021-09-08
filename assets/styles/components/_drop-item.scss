@@ -1,0 +1,71 @@
+.drop-item {
+  &__header {
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border: 2px solid $clr-gray;
+      background: no-repeat url("/assets/img/icon/arrowDown.svg") center $clr-white;
+      border-radius: 50%;
+    }
+  }
+  &__content {
+    overflow: hidden;
+    height: 0;
+    transition: height .3s;
+    &-inner {
+      padding: 24px 0 32px;
+    }
+  }
+  &__title {
+    @extend .sub2--bold;
+    margin-bottom: 8px;
+  }
+  &__subtitle {
+    @extend .body2;
+    color: $clr-gray--dark;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid $clr-gray;
+  }
+  &--active &__header:after {
+    background-color: $clr-lilac;
+    border-color: $clr-lilac;
+    background-image: url('/assets/img/icon/arrow-up-white.png');
+  }
+  &--active &__content {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+  }
+  @media only screen and (min-width: $desktop) {
+    &__header {
+      padding: 60px 0;
+      display: flex;
+      align-items: center;
+      &:after {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    &__content-inner {
+      padding: 48px 0 60px;
+    }
+    &__title {
+      margin-bottom: 0;
+      margin-right: 97px;
+      font-size: 31px;
+      line-height: 40px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+}

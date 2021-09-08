@@ -25,7 +25,6 @@
   padding: 24px 16px;
   background: $bg-gray--light;
   border-radius: 6px;
-  
   &__item {
     h2 {
       color: $clr-lilac;
@@ -86,9 +85,7 @@
   }
 }
 .review-block {
-  padding: 24px 0;
-  border-top: 1px solid $clr-black--light;
-  border-bottom: 1px solid $clr-black--light;
+  // padding: 24px 0;
   &__author {
     margin-bottom: 24px;
     &-name {
@@ -115,6 +112,26 @@
   width: 100%;
   margin-top: 35px;
 }
+.img-thumbnail {
+  @extend .body2;
+  color: $clr-gray--dark;
+  margin-top: 12px;
+}
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  li {
+    img {
+      filter: grayscale(100%);
+      opacity: .6;
+    }
+    &:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+}
 @media only screen and (min-width: $tablet) {
   .award-item {
     display: flex;
@@ -134,6 +151,10 @@
   }
 }
 @media only screen and (min-width: $desktop) {
+  .client-list {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 70px;
+  }
   .thesis-card.sticky {
     position: sticky;
     top: 20px;
@@ -172,7 +193,7 @@
     }
   }
   .review-block {
-    padding: 60px 0;
+    //  padding: 60px 0;
     display: flex;
     align-items: flex-start;
     &__author {
@@ -194,5 +215,8 @@
       flex: 1;
       margin-left: 30px;
     }
+  }
+  .img-thumbnail {
+    margin-top: 24px;
   }
 }

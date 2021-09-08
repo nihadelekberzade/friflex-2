@@ -1,5 +1,8 @@
 .career-page {
   counter-reset: count;
+  &__title {
+    margin-bottom: 32px;
+  }
   .section-internship {
     padding: 80px 0;
     .step-item {
@@ -9,10 +12,116 @@
         content: counter(count);
       }
     }
+    ul {
+      margin-bottom: 32px;
+    }
+  }
+  .section-dropdowns {
+    .drop-item:not(:first-child):not(:last-child) {
+      border-top: 1px solid $clr-gray;
+      border-bottom: 1px solid $clr-gray;
+    }
+    .drop-item {
+      .dotted-list li:not(:last-child) {
+        margin-bottom: 12px;
+      }
+      .dotted-list__title {
+        margin-bottom: 14px;
+      }
+      &__content-inner {
+        max-width: 819px;
+        margin-left: auto;
+      }
+      &__content-item:not(:last-child) {
+        margin-bottom: 32px;
+      }
+      .contact-us {
+        padding: 0;
+      }
+    }
+  }
+  .section-reviews {
+    position: relative;
+    padding: 64px 0;
+    ul li:not(:last-child) {
+      margin-bottom: 48px;
+    }
+    .container {
+      position: relative;
+    }
+    &:before {
+      content: '';
+      background: no-repeat url("/assets/img/logo-bg-reviews-mobile.png") center;
+      position: absolute;
+      left: 16px;
+      top: 31px;
+      right: 0;
+      min-height: 335px;
+    }
+  }
+  .img-swiper-item {
+    position: relative;
+    &__content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 16px;
+      color: $clr-white;
+      h2 {
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
   }
   @media only screen and (min-width: $desktop) {
+    &__title {
+      margin-bottom: 60px;
+    }
     .section-internship {
       padding: 190px 0;
+      ul {
+        margin-bottom: 70px;
+      }
+    }
+    .img-swiper-item {
+      &__content {
+        bottom: 70px;
+        h2 {
+          font-size: 49px;
+          line-height: 59px;
+        }
+      }
+    }
+    .section-reviews {
+      padding: 100px 0;
+      ul li:not(:last-child) {
+        margin-bottom: 130px;
+      }
+      &:before {
+        background-image: url("/assets/img/logo-bg-reviews-desktop.png");
+        right: 180px;
+        left: unset;
+        min-height: 995px;
+        min-width: 816px;
+      }
+    }
+    .section-dropdowns {
+      .drop-item:not(:first-child):not(:last-child) {
+        border-top: 1px solid $clr-gray;
+        border-bottom: 1px solid $clr-gray;
+      }
+      .drop-item {
+        .dotted-list li:not(:last-child) {
+          margin-bottom: 16px;
+        }
+        .dotted-list__title {
+          margin-bottom: 24px;
+        }
+        &__content-item:not(:last-child) {
+          margin-bottom: 48px;
+        }
+      }
     }
   }
 }
+

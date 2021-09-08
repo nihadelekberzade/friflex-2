@@ -1,3 +1,11 @@
+.black-border {
+  border-top: 1px solid $clr-black--light;
+  border-bottom: 1px solid $clr-black--light;
+  padding: 24px 0;
+  @media only screen and (min-width: $desktop) {
+    padding: 60px 0;
+  }
+}
 .bg-gray--light {
   background-color: $bg-gray--light;
   section.contact-us .form .form-field {
@@ -38,6 +46,47 @@
 }
 .mb-40 {
   margin-bottom: 40px;
+}
+.bordered-section {
+  border-top: 1px solid $clr-black--light;
+  border-bottom: 1px solid $clr-black--light;
+  @media only screen and (min-width: $desktop) {
+    padding: 60px 0;
+  }
+}
+.mb-24-50 {
+  margin-bottom: 24px;
+  @media only screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+.mb-32-50 {
+  margin-bottom: 32px;
+  @media only screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+.mb-32-60 {
+  margin-bottom: 32px;
+  @media only screen and (min-width: $desktop) {
+    margin-bottom: 60px;
+  }
+}
+.mb-32-80 {
+  margin-bottom: 32px;
+  @media only screen and (min-width: $desktop) {
+    margin-bottom: 80px;
+  }
+}
+.sub2-h4 {
+  @extend .sub2;
+  @media only screen and (min-width: $desktop) {
+    font-size: 49px;
+    line-height: 59px;
+  }
+}
+.gray-dark {
+  color: $clr-gray--dark;
 }
 .inline-block {
   display: inline-block;
