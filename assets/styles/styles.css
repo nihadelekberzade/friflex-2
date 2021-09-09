@@ -23,7 +23,7 @@
   font-family: "Proxima Nova Web Bold", Arial, sans-serif;
 }
 
-.h3 {
+.h3, .next-project__name {
   font-size: 34px;
   font-weight: 700;
   line-height: 41px;
@@ -68,7 +68,7 @@
   font-family: "Proxima Nova Web Bold", Arial, sans-serif;
 }
 
-.body2, .step-item__txt, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
+.body2, .step-item__txt, .next-project__title, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
   font-size: 14px;
   line-height: 19px;
 }
@@ -88,7 +88,7 @@
     line-height: 105px;
   }
 
-  .h3 {
+  .h3, .next-project__name {
     font-size: 70px;
     line-height: 82px;
   }
@@ -113,7 +113,7 @@
     line-height: 27px;
   }
 
-  .body2, .step-item__txt, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
+  .body2, .step-item__txt, .next-project__title, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
     font-size: 16px;
     line-height: 22px;
   }
@@ -1272,6 +1272,71 @@ body {
   }
 }
 
+.next-project {
+  width: 100%;
+  background-color: #fbfbfb;
+  padding-top: 32px;
+}
+.next-project__title {
+  margin-bottom: 6px;
+  color: #969696;
+}
+.next-project__img {
+  margin: 0 auto;
+}
+.next-project__name {
+  font-weight: 700;
+  margin-right: 12px;
+  color: #383838;
+  font-family: "Proxima Nova Web Bold", Arial, sans-serif;
+}
+.next-project__arrow {
+  transition: transform 0.3s;
+  width: 26px;
+  height: 21px;
+}
+.next-project__arrow img {
+  width: 100%;
+}
+.next-project__lower {
+  display: flex;
+  align-items: center;
+}
+.next-project:hover .next-project__arrow {
+  transform: translateX(20px);
+}
+@media only screen and (min-width: 1024px) {
+  .next-project {
+    min-height: 416px;
+    display: flex;
+    align-items: center;
+  }
+  .next-project__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .next-project__title {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: "Proxima Nova Web Bold", Arial, sans-serif;
+  }
+  .next-project__name {
+    margin: 0 40px 0 0;
+    font-size: 95px;
+    line-height: 105px;
+  }
+  .next-project__arrow {
+    width: 52.15px;
+    height: 41.48px;
+  }
+  .next-project:hover .next-project__arrow {
+    transform: translateX(20px);
+  }
+}
+
 .step-item {
   position: relative;
   background-color: #f7f7f7;
@@ -1316,10 +1381,13 @@ body {
 }
 
 .home .partners {
-  padding: 32px 0 80px;
+  padding: 48px 0 80px;
 }
 .home .partners .swiper-slide {
   max-width: 132px;
+}
+.home .partners .swiper-container {
+  max-height: 67px;
 }
 .home .services {
   background: #fbfbfb;

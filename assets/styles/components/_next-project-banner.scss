@@ -1,0 +1,64 @@
+.next-project {
+  width: 100%;
+  background-color: $bg-gray--light;
+  padding-top: 32px;
+  &__title {
+    @extend .body2;
+    margin-bottom: 6px;
+    color: $clr-gray--dark;
+  }
+  &__img {
+    margin: 0 auto;
+  }
+  &__name {
+    @extend .h3;
+    font-weight: 700;
+    margin-right: 12px;
+    color: $clr-black--light;
+    font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
+  }
+  &__arrow {
+    transition: transform .3s;
+    width: 26px;
+    height: 21px;
+    img {
+      width: 100%;
+    }
+  }
+  &__lower {
+    display: flex;
+    align-items: center;
+  }
+  &:hover &__arrow {
+    transform: translateX(20px);
+  }
+  @media only screen and (min-width: $desktop) {
+    min-height: 416px;
+    display: flex;
+    align-items: center;
+    &__inner {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
+    }
+    &__name {
+      margin: 0 40px 0 0;
+      font-size: 95px;
+      line-height: 105px;
+    }
+    &__arrow {
+      width: 52.15px;
+      height: 41.48px;
+    }
+    &:hover &__arrow {
+      transform: translateX(20px);
+    }
+  }
+}

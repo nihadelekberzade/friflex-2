@@ -1,8 +1,11 @@
 .home {
   .partners {
-    padding: 32px 0 80px;
+    padding: 48px 0 80px;
     .swiper-slide {
       max-width: 132px;
+    }
+    .swiper-container {
+      max-height: 67px;
     }
   }
   .services {
@@ -53,8 +56,8 @@
           margin-bottom: 4px;
         }
         &-title {
-         @extend .body1;
-         font-weight: 400;
+          @extend .body1;
+          font-weight: 400;
         }
       }
       &--diksi {
