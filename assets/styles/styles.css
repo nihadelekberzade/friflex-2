@@ -1024,7 +1024,8 @@ body {
   margin-right: 15px;
 }
 .contact-us .form-checkbox .checkmark:after {
-  background: no-repeat url("../../img/icon/Check.svg") center;
+  background: no-repeat url("/assets/img/icon/Check.svg") center;
+  display: inline-block;
   width: 100%;
   height: 100%;
 }
@@ -1547,6 +1548,12 @@ body {
 .case-section__hero-img img {
   width: 100%;
 }
+.case-section__inner {
+  padding-bottom: 80px;
+}
+.case-section__inner > *:first-child {
+  margin-bottom: 56px;
+}
 .case-section .info-list > *:not(:last-child) {
   margin-bottom: 56px;
 }
@@ -1598,13 +1605,15 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
+    padding-bottom: 190px;
   }
   .case-section__inner > *:last-child {
     flex: 1;
     margin-right: 32px;
   }
-  .case-section__inner > *:last-child {
+  .case-section__inner > *:first-child {
     flex-basis: 391px;
+    margin-bottom: 0;
   }
   .case-section .info-list > *:not(:last-child) {
     margin-bottom: 80px;

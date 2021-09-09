@@ -13,6 +13,12 @@
       width: 100%;
     }
   }
+  &__inner {
+    padding-bottom: 80px;
+    & > *:first-child {
+      margin-bottom: 56px;
+    }
+  }
   .info-list {
     & > *:not(:last-child) {
       margin-bottom: 56px;
@@ -72,12 +78,14 @@
       display: flex;
       align-items: flex-start;
       flex-direction: row-reverse;
+      padding-bottom: 190px;
       & > *:last-child {
         flex: 1;
         margin-right: 32px;
       }
-      & > *:last-child {
+      & > *:first-child {
         flex-basis: 391px;
+        margin-bottom: 0;
       }
     }
     .info-list {

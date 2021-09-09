@@ -60,7 +60,8 @@
         border: 1px solid $clr-black;
         margin-right: 15px;
         &:after {
-          background: no-repeat url("../../img/icon/Check.svg") center;
+          background: no-repeat url("/assets/img/icon/Check.svg") center;
+          display: inline-block;
           width: 100%;
           height: 100%;
         }
