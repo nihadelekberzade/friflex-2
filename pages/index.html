@@ -377,6 +377,10 @@
             <p class="service-card__subtitle">
               Кроссплатформенных и нативных
             </p>
+            <p class="service-card__txt">
+              Напишем чистый легко расширяемый и поддерживаемый код для разных платформ. Создадим приложение, которым
+              будут пользоваться миллионы
+            </p>
             <p class="service-card__price">От 2000 руб в час</p>
           </a>
         </li>
@@ -386,6 +390,10 @@
             <p class="service-card__subtitle">
               Создание сайтов, фронтенд и бэкенд
             </p>
+            <p class="service-card__txt">
+              Разработаем эффективный сайт для ваших пользователей, найдем лучшее решение по сочетанию технологий и
+              юзабилити.
+            </p>
             <p class="service-card__price">От 2000 руб в час</p>
           </a>
         </li>
@@ -393,6 +401,9 @@
           <a class="service-card" href="#">
             <h2 class="service-card__title">Аналитика</h2>
             <p class="service-card__subtitle">Анализ данных</p>
+            <p class="service-card__txt">
+              Детально изучим контекст, рынок, задачу, предложим лучшее решение
+            </p>
             <p class="service-card__price">От 1000 руб в час</p>
           </a>
         </li>
@@ -401,6 +412,9 @@
             <h2 class="service-card__title">Аудит</h2>
             <p class="service-card__subtitle">
               Скрупулезная проверка ИТ-продуктов
+            </p>
+            <p class="service-card__txt">
+              Все проверим , изложим и предложим, как исправить
             </p>
             <p class="service-card__price">От 2500 руб в час</p>
           </a>
@@ -413,6 +427,9 @@
             <p class="service-card__subtitle">
               UI /UX, дизайн-прототипирование
             </p>
+            <p class="service-card__txt">
+              Создадим эффективный интерфейс – удобный и понятный вашему пользователю
+            </p>
             <p class="service-card__price">От 1500 руб. в час</p>
           </a>
         </li>
@@ -422,6 +439,9 @@
             <p class="service-card__subtitle">
               Тщательная проверка работоспособности сервисов
             </p>
+            <p class="service-card__txt">
+              Проконтролируем качество решения на всех этапах разработки
+            </p>
             <p class="service-card__price">От 1500 руб. в час</p>
           </a>
         </li>
@@ -430,6 +450,9 @@
             <h2 class="service-card__title">Поддержка ИТ-сервисов
             </h2>
             <p class="service-card__subtitle">24/ 7</p>
+            <p class="service-card__txt">
+              Будем развивать продукт для ваших пользователей. Оказываем расширенные сервисы поддержки
+            </p>
           </a>
         </li>
         <li>
@@ -437,6 +460,9 @@
             <h2 class="service-card__title">Машинное обучение</h2>
             <p class="service-card__subtitle">
               Создание бизнес-решений с помощью ИИ- алгоритмов
+            </p>
+            <p class="service-card__txt">
+              Разработаем технологичные ИИ-решения для будущего
             </p>
             <p class="service-card__price">От 2500 руб в час</p>
           </a>
@@ -446,6 +472,10 @@
             <h2 class="service-card__title">DevOps</h2>
             <p class="service-card__subtitle">
               Оптимизация сроков и эффективности разработки
+            </p>
+            <p class="service-card__txt">
+              Напишем чистый легко расширяемый и поддерживаемый код для разных платформ. Создадим приложение, которым
+              будут пользоваться миллионы
             </p>
             <p class="service-card__price">От 1800 руб. в час</p>
           </a>
@@ -599,7 +629,7 @@
     <div class="container">
       <div class="news-section__header">
         <h3 class="news-section__title h3">Friflex – эксперты в СМИ</h3>
-        <div class="flex desktop-only">
+        <div class="flex desktop-only" style="min-height: 32px;">
           <button class="swiper-button-prev">
             <img alt="arrow left" src="../assets/img/icon/arrowLeft.svg" />
           </button>
@@ -759,27 +789,31 @@
           <img alt="panda" src="../assets/img/pandaContact.png" />
         </div>
         <form action="#" class="form">
-          <div class="form-group">
-            <div class="form-field">
-              <input id="name" name="name" placeholder="Имя" type="text" />
-            </div>
-            <div class="form-field">
-              <input
-                id="email"
-                name="email"
-                placeholder="E-mail"
-                type="text"
-              />
+          <div class="form-item">
+            <div class="form-group">
+              <div class="form-field">
+                <input id="name" name="name" placeholder="Имя" type="text" />
+              </div>
+              <div class="form-field">
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                  type="text"
+                />
+              </div>
             </div>
           </div>
-          <div class="form-field">
+          <div class="form-item">
+            <div class="form-field">
                 <textarea
                   id="message"
                   name="message"
                   placeholder="Сообщение"
                 ></textarea>
+            </div>
           </div>
-          <div>
+          <div class="form-item--large">
             <label class="file" for="file">
               Прикрепить файл
               <img alt="skrepka" src="/assets/img/icon/skrepka.svg" />
@@ -794,12 +828,12 @@
           </div>
           <div class="form__lower">
             <div class="form__lower-left">
-              <label class="form-checkbox form-field">
+              <label class="form-checkbox form-item--large">
                 <input id="nda" name="nda" type="checkbox" />
                 <span class="checkmark"></span>
                 <span>Нужен NDA</span>
               </label>
-              <label class="form-checkbox form-field">
+              <label class="form-checkbox form-item--large">
                 <input id="agreement" name="agreement " type="checkbox" />
                 <span class="checkmark"></span>
                 <span>
@@ -868,7 +902,7 @@
         </ul>
       </div>
       <div class="footer__field footer__field--projects">
-        <h2 class="body1 footer__field-title">Больше о нас</h2>
+        <h2 class="body1 footer__field-title">Наши проекты</h2>
         <ul class="footer__field-list">
           <li>
             <a href="#"> FinСhess </a>
@@ -880,14 +914,14 @@
       </div>
       <div class="footer__field">
         <a
-          class="body1 footer__field-title"
+          class="footer__field-title"
           href="mailto: hello@friflex.com"
         >
           hello@friflex.com
         </a>
         <ul class="footer__field-list">
           <li>
-            <a href="tel:+7 (495) 131-54-96">+7 (495) 131-54-96</a>
+            <a href="tel:+7 (495) 131-54-96" class="body1--semibold">+7 (495) 131-54-96</a>
           </li>
           <li>
             <div class="footer__socials">

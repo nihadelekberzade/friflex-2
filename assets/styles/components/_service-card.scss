@@ -5,19 +5,39 @@
   display: flex;
   flex-direction: column;
   min-height: 250px;
+  &, &__txt, &__subtitle {
+    //  transition: 1s;
+  }
   &__title {
     @extend .sub2--bold;
     margin-bottom: 8px;
   }
-  &__subtitle {
-    color: $clr-black--light;
+  &__txt {
+    opacity: 0;
+    visibility: hidden;
   }
   &__price {
     @extend .body2;
     color: $clr-black--light;
     margin-top: auto;
   }
+  &:hover {
+    * {
+      color: $clr-white;
+    }
+    background-color: $clr-lilac;
+    .service-card__subtitle {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+    .service-card__txt {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   @media only screen and (min-width: $desktop) {
+    padding: 30px 30px 24px;
     &__title {
       min-height: 68px;
     }

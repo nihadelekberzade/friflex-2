@@ -20,7 +20,7 @@
     margin-right: 18px;
   }
   &__subtitle {
-    color: $clr-black--light;
+    color: $clr-gray--dark;
     margin-bottom: 32px;
   }
   @media only screen and (min-width: $desktop) {
@@ -36,14 +36,14 @@
       }
     }
     &__icon {
-      margin-right: 40px;
+      margin-right: 80px;
       position: relative;
       font-size: 110px;
       line-height: 130px;
       &:before {
         content: '';
         position: absolute;
-        right: 0;
+        right: -40px;
         top: 0;
         bottom: 0;
         width: calc((100vw - 1000px) / 2);

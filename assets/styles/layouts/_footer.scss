@@ -11,6 +11,7 @@
   &__field {
     @extend .body1;
     &-title {
+      @extend .body1--semibold;
       margin-bottom: 16px;
     }
     &--projects {
@@ -44,14 +45,19 @@
     &__inner {
       display: flex;
       & > * {
-        flex: 1;
         &:first-child {
-          margin-right: 153px;
+          margin-right: 259px;
+        }
+        &:nth-child(2) {
+          margin-right: 87px;
+        }
+        &:nth-child(3) {
+          margin-right: 180px;
         }
       }
     }
     &__field--projects {
-        margin: 0;
+      margin: 0;
     }
   }
 }

@@ -29,11 +29,14 @@
     display: flex;
     align-items: center;
   }
+  &__right {
+    margin-bottom: 16px;
+  }
   &:hover &__arrow {
     transform: translateX(20px);
   }
   @media only screen and (min-width: $desktop) {
-    min-height: 416px;
+    padding-top: 56px;
     display: flex;
     align-items: center;
     &__inner {
@@ -41,12 +44,20 @@
       align-items: center;
       flex-direction: row-reverse;
     }
+    &__img {
+      max-width: 729px;
+      max-height: 360px;
+      margin-right: 100px;
+    }
+    &__right {
+      margin-bottom: 0;
+    }
     &__title {
       font-size: 20px;
       line-height: 27px;
       font-weight: 600;
       margin-bottom: 24px;
-      font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
+      font-family: 'Proxima Nova Web Semibold', Arial, sans-serif;
     }
     &__name {
       margin: 0 40px 0 0;

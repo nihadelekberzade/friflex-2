@@ -1,6 +1,7 @@
 .award-item {
   &__place {
     background: no-repeat url("/assets/img/icon/award-frame 1.jpg") center;
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,6 +149,9 @@
   .service-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    li > * {
+      min-height: 100%;
+    }
   }
 }
 @media only screen and (min-width: $desktop) {

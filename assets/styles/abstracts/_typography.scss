@@ -33,7 +33,7 @@
   font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
   &--regular {
     @extend .h4;
-    font-family: 'Proxima Nova Regular',Arial,sans-serif;
+    font-family: 'Proxima Nova Regular', Arial, sans-serif;
     font-weight: 400;
   }
 }
@@ -61,7 +61,7 @@
   &--semibold {
     @extend .body1;
     font-weight: 600;
-    font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
+    font-family: 'Proxima Nova Web Semibold', Arial, sans-serif;
   }
 }
 .body2 {
@@ -70,7 +70,7 @@
   &--semibold {
     @extend .body2;
     font-weight: 600;
-    font-family: 'Proxima Nova Web Bold', Arial, sans-serif;
+    font-family: 'Proxima Nova Web Semibold', Arial, sans-serif;
   }
 }
 @media only screen and (min-width: 1024px) {

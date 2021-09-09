@@ -4,15 +4,16 @@
   src: url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
   url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.woff') format('woff'),
   url('/assets/fonts/Proxima-Nova/ProximaNova-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Web Semibold';
+  src: url('/assets/fonts/Proxima-Nova/Proxima-Nova_Semibold_W.woff2') format('woff2'),
+  url('/assets/fonts/Proxima-Nova/Proxima-Nova_Semibold_W.woff') format('woff');
 }
 @font-face {
   font-family: 'Proxima Nova Web Bold';
   src: url('/assets/fonts/Proxima-Nova/Proxima-Nova_Bold_W.woff2') format('woff2'),
   url('/assets/fonts/Proxima-Nova/Proxima-Nova_Bold_W.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
 body {
   font-size: 14px;
