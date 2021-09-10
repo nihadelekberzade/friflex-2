@@ -68,7 +68,7 @@
   font-family: "Proxima Nova Web Semibold", Arial, sans-serif;
 }
 
-.body2, .step-item__txt, .next-project__title, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
+.body2, .step-item__txt, .next-project__title, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .service-card__txt, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
   font-size: 14px;
   line-height: 19px;
 }
@@ -113,7 +113,7 @@
     line-height: 27px;
   }
 
-  .body2, .step-item__txt, .next-project__title, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
+  .body2, .step-item__txt, .next-project__title, .drop-item__subtitle, .news-card__tag, .news-card__date, .service-card__price, .service-card__txt, .contact-us .form-checkbox label, .footer__field ul, .header .menu, .img-thumbnail, .body2--semibold, .btn-header {
     font-size: 16px;
     line-height: 22px;
   }
