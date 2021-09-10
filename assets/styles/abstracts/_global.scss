@@ -178,6 +178,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
+  .service-list li {
+    min-height: 272px;
+  }
   .project-card {
     &__title {
       margin-top: 20px;

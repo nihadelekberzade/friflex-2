@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Career</title>
-  <link href="../assets/styles/styles.css" rel="stylesheet"/>
+  <link href="../assets/styles/styles.css" rel="stylesheet" />
   <script defer src="/scripts/header.js"></script>
 </head>
 <body class="bg-gray--light">
@@ -15,7 +15,7 @@
     <div class="header__inner">
       <div class="header__left">
         <a class="header__logo" href="index.html">
-          <img alt="logo" src="/assets/img/logo.svg"/>
+          <img alt="logo" src="/assets/img/logo.svg" />
         </a>
         <nav class="menu">
           <ul>
@@ -64,7 +64,7 @@
         </nav>
       </div>
       <button class="header__menu-btn">
-        <img alt="menu" src="../assets/img/icon/Menu.svg"/>
+        <img alt="menu" src="../assets/img/icon/Menu.svg" />
       </button>
       <div class="header__right">
         <p class="body2">En</p>
@@ -189,7 +189,7 @@
         <li>
           <a class="news-card" href="#">
             <div class="news-card__img">
-              <img alt="news" src="../assets/img/news/news1.jpg"/>
+              <img alt="news" src="../assets/img/news/news1.jpg" />
             </div>
             <div class="news-card__content">
               <div class="news-card__content-head">
@@ -211,7 +211,7 @@
         <li>
           <a class="news-card" href="#">
             <div class="news-card__img">
-              <img alt="news" src="../assets/img/news/news1.jpg"/>
+              <img alt="news" src="../assets/img/news/news1.jpg" />
             </div>
             <div class="news-card__content">
               <div class="news-card__content-head">
@@ -233,7 +233,7 @@
         <li>
           <a class="news-card" href="#">
             <div class="news-card__img">
-              <img alt="news" src="../assets/img/news/news1.jpg"/>
+              <img alt="news" src="../assets/img/news/news1.jpg" />
             </div>
             <div class="news-card__content">
               <div class="news-card__content-head">
@@ -263,31 +263,37 @@
       <h2 class="contact-us__title h3">Напишите нам</h2>
       <div class="contact-us__inner">
         <div class="desktop-only">
-          <img alt="panda" src="../assets/img/pandaContact.png"/>
+          <img alt="panda" src="../assets/img/pandaContact.png" />
         </div>
         <form action="#" class="form">
-          <div class="form-field">
-            <input id="name" name="name" placeholder="Имя" type="text"/>
+          <div class="form-item">
+            <div class="form-group">
+              <div class="form-field">
+                <input id="name" name="name" placeholder="Имя" type="text" />
+              </div>
+              <div class="form-field">
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                  type="text"
+                />
+              </div>
+            </div>
           </div>
-          <div class="form-field">
-            <input
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              type="text"
-            />
-          </div>
-          <div class="form-field">
+          <div class="form-item">
+            <div class="form-field">
                 <textarea
                   id="message"
                   name="message"
                   placeholder="Сообщение"
                 ></textarea>
+            </div>
           </div>
-          <div>
+          <div class="form-item--large">
             <label class="file" for="file">
               Прикрепить файл
-              <img alt="skrepka" src="/assets/img/icon/skrepka.svg"/>
+              <img alt="skrepka" src="/assets/img/icon/skrepka.svg" />
               <input
                 class="file"
                 id="file"
@@ -299,13 +305,13 @@
           </div>
           <div class="form__lower">
             <div class="form__lower-left">
-              <label class="form-checkbox form-field">
-                <input id="nda" name="nda" type="checkbox"/>
+              <label class="form-checkbox form-item--large">
+                <input id="nda" name="nda" type="checkbox" />
                 <span class="checkmark"></span>
                 <span>Нужен NDA</span>
               </label>
-              <label class="form-checkbox form-field">
-                <input id="agreement" name="agreement " type="checkbox"/>
+              <label class="form-checkbox form-item--large">
+                <input id="agreement" name="agreement " type="checkbox" />
                 <span class="checkmark"></span>
                 <span>
                       Я даю согласие на
@@ -349,7 +355,7 @@
   <div class="container">
     <div class="footer__inner">
       <div class="footer__logo">
-        <img alt="logo footer" src="../assets/img/logoFooter.svg"/>
+        <img alt="logo footer" src="../assets/img/logoFooter.svg" />
         <div class="body2 desktop-only">© Friflex LLC, 2021</div>
       </div>
       <div class="footer__field">

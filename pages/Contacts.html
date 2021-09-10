@@ -228,25 +228,31 @@
           <img alt="panda" src="../assets/img/pandaContact.png" />
         </div>
         <form action="#" class="form">
-          <div class="form-field">
-            <input id="name" name="name" placeholder="Имя" type="text" />
+          <div class="form-item">
+            <div class="form-group">
+              <div class="form-field">
+                <input id="name" name="name" placeholder="Имя" type="text" />
+              </div>
+              <div class="form-field">
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                  type="text"
+                />
+              </div>
+            </div>
           </div>
-          <div class="form-field">
-            <input
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              type="text"
-            />
-          </div>
-          <div class="form-field">
+          <div class="form-item">
+            <div class="form-field">
                 <textarea
                   id="message"
                   name="message"
                   placeholder="Сообщение"
                 ></textarea>
+            </div>
           </div>
-          <div>
+          <div class="form-item--large">
             <label class="file" for="file">
               Прикрепить файл
               <img alt="skrepka" src="/assets/img/icon/skrepka.svg" />
@@ -261,12 +267,12 @@
           </div>
           <div class="form__lower">
             <div class="form__lower-left">
-              <label class="form-checkbox form-field">
+              <label class="form-checkbox form-item--large">
                 <input id="nda" name="nda" type="checkbox" />
                 <span class="checkmark"></span>
                 <span>Нужен NDA</span>
               </label>
-              <label class="form-checkbox form-field">
+              <label class="form-checkbox form-item--large">
                 <input id="agreement" name="agreement " type="checkbox" />
                 <span class="checkmark"></span>
                 <span>

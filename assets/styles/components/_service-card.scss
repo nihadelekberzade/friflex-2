@@ -13,8 +13,9 @@
     margin-bottom: 8px;
   }
   &__txt {
-    opacity: 0;
-    visibility: hidden;
+    //opacity: 0;
+    //visibility: hidden;
+    display: none;
   }
   &__price {
     @extend .body2;
@@ -27,13 +28,15 @@
     }
     background-color: $clr-lilac;
     .service-card__subtitle {
-      opacity: 0;
-      visibility: hidden;
-      height: 0;
+      //opacity: 0;
+      //visibility: hidden;
+      //height: 0;
+      display: none;
     }
     .service-card__txt {
-      opacity: 1;
-      visibility: visible;
+      //opacity: 1;
+      //visibility: visible;
+      display: block;
     }
   }
   @media only screen and (min-width: $desktop) {

@@ -682,6 +682,10 @@ body {
     gap: 30px;
   }
 
+  .service-list li {
+    min-height: 272px;
+  }
+
   .project-card__title {
     margin-top: 20px;
   }
@@ -1076,6 +1080,9 @@ body {
     align-items: flex-end;
     justify-content: space-between;
   }
+  .contact-us .form .btn-header {
+    min-height: 60px;
+  }
   .contact-us .form-group {
     display: flex;
   }
@@ -1161,8 +1168,7 @@ body {
   margin-bottom: 8px;
 }
 .service-card__txt {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 .service-card__price {
   color: #383838;
@@ -1175,13 +1181,10 @@ body {
   color: #ffffff;
 }
 .service-card:hover .service-card__subtitle {
-  opacity: 0;
-  visibility: hidden;
-  height: 0;
+  display: none;
 }
 .service-card:hover .service-card__txt {
-  opacity: 1;
-  visibility: visible;
+  display: block;
 }
 @media only screen and (min-width: 1024px) {
   .service-card {

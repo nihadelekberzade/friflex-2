@@ -112,6 +112,9 @@
         align-items: flex-end;
         justify-content: space-between;
       }
+      .btn-header {
+        min-height: 60px;
+      }
     }
     .form-group {
       display: flex;
