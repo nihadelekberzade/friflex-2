@@ -1049,7 +1049,7 @@ body {
   content: "";
 }
 .contact-us .form__lower-left {
-  margin-top: 30px;
+  margin: 16px 0 40px;
 }
 .contact-us__title {
   margin-bottom: 50px;
@@ -1068,7 +1068,7 @@ body {
     margin-bottom: 20px;
   }
   .contact-us .form-item--large:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
   .contact-us .form input, .contact-us .form textarea {
     font-size: 16px;
@@ -1079,6 +1079,9 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+  }
+  .contact-us .form__lower-left {
+    margin: 0;
   }
   .contact-us .form .btn-header {
     min-height: 60px;
