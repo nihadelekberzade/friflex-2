@@ -337,9 +337,6 @@ body {
 .bg-gray--light {
   background-color: #fbfbfb;
 }
-.bg-gray--light section.contact-us .form .form-field input, .bg-gray--light section.contact-us .form .form-field textarea {
-  background-color: #fff;
-}
 
 .clr-lilac {
   color: #6645ea;
@@ -984,23 +981,31 @@ body {
 .contact-us .form {
   flex: 1;
 }
-.contact-us .form .form-field input, .contact-us .form .form-field textarea {
-  color: #969696;
-  background-color: #fbfbfb;
+.contact-us .form .form-field,
+.contact-us .form .file-input-field {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #969696;
 }
-.contact-us .form .form-item:not(:last-child),
-.contact-us .form .form-item--large:not(:last-child) {
-  margin-bottom: 16px;
-}
-.contact-us .form input, .contact-us .form textarea {
+.contact-us .form .form-field input, .contact-us .form .form-field textarea,
+.contact-us .form .file-input-field input,
+.contact-us .form .file-input-field textarea {
   font-size: 16px;
   line-height: 21px;
-  background: #ffffff;
-  padding: 16px 16px 15px;
+  color: #1f1f1f;
+  background-color: transparent;
 }
-.contact-us .form textarea {
-  min-height: 150px;
-  resize: none;
+.contact-us .form .file-input-field {
+  display: flex;
+  align-items: center;
+}
+.contact-us .form .file-input-field input {
+  flex: 1;
+}
+.contact-us .form .form-item:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.contact-us .form__lower {
+  margin-top: 38px;
 }
 @media only screen and (max-width: 1024px) {
   .contact-us .form .form-group > *:not(:last-child) {
@@ -1064,24 +1069,29 @@ body {
   .contact-us__inner > *:first-child {
     margin-right: 30px;
   }
-  .contact-us .form-item:not(:last-child) {
-    margin-bottom: 20px;
+  .contact-us .form {
+    padding-top: 29px;
   }
-  .contact-us .form-item--large:not(:last-child) {
-    margin-bottom: 30px !important;
+  .contact-us .form .form-item:not(:last-of-type) {
+    margin-bottom: 87px;
   }
-  .contact-us .form input, .contact-us .form textarea {
-    font-size: 16px;
-    line-height: 22px;
-    padding: 19px 14px 19px 20px;
+  .contact-us .form .form-field input,
+.contact-us .form .form-field textarea, .contact-us .form .file-input-field input,
+.contact-us .form .file-input-field textarea {
+    font-size: 20px;
+    line-height: 27px;
   }
   .contact-us .form__lower {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    margin-top: 66px;
   }
   .contact-us .form__lower-left {
     margin: 0;
+  }
+  .contact-us .form__lower-left > *:not(:last-child) {
+    margin-bottom: 30px;
   }
   .contact-us .form .btn-header {
     min-height: 60px;

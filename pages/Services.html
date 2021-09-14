@@ -351,36 +351,30 @@
                 </div>
               </div>
             </div>
-            <div class="form-item">
-              <div class="form-field">
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Сообщение"
-                ></textarea>
-              </div>
-            </div>
-            <div class="form-item--large">
-              <label class="file" for="file">
-                Прикрепить файл
-                <img alt="skrepka" src="/assets/img/icon/skrepka.svg" />
+            <div>
+              <div class="file-input-field">
+                <input type="text" name="description" id="description" placeholder="Описание проекта">
+                <label for="file" style="cursor:pointer;">
+                  <img alt="skrepka" src="/assets/img/icon/skrepka.svg" />
+                </label>
                 <input
                   class="file"
                   id="file"
                   name="file"
                   placeholder="Прикрепить файл"
                   type="file"
+                  style="display: none"
                 />
-              </label>
+              </div>
             </div>
             <div class="form__lower">
               <div class="form__lower-left">
-                <label class="form-checkbox form-item--large">
+                <label class="form-checkbox">
                   <input id="nda" name="nda" type="checkbox" />
                   <span class="checkmark"></span>
                   <span>Нужен NDA</span>
                 </label>
-                <label class="form-checkbox form-item--large">
+                <label class="form-checkbox">
                   <input id="agreement" name="agreement " type="checkbox" />
                   <span class="checkmark"></span>
                   <span>
